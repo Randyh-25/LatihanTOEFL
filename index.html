@@ -5,9 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOEFL CBT Simulation</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Form & Welcome Screen Styles */
+        #welcome-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #1e3a8a;
+            color: #333;
+        }
+        .welcome-box {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-group {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .nav-section-header {
+            grid-column: 1 / -1;
+            margin: 10px 0 5px 0;
+            font-size: 0.85em;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+    </style>
 </head>
 <body>
-    <div id="exam-container">
+    
+    <div id="welcome-screen">
+        <div class="welcome-box">
+            <h1 style="margin-top: 0; color: #1e3a8a;">TOLFL Simulation</h1>
+            <div class="form-group">
+                <label><strong>Pilih Paket Soal:</strong></label>
+                <select id="paket-select">
+                    <option value="PaketA.json">Paket A (Listening, Structure, Reading)</option>
+                    <option value="PaketB.json">Paket B (Hanya Structure & Reading)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><strong>Mode Ujian:</strong></label>
+                <select id="mode-select">
+                    <option value="timed">Simulasi Asli (Menggunakan Waktu)</option>
+                    <option value="practice">Latihan Bebas (Tanpa Waktu)</option>
+                </select>
+            </div>
+            <button onclick="startSetup()" style="width: 100%; padding: 12px; font-size: 1.1em;">Mulai Ujian</button>
+        </div>
+    </div>
+
+    <div id="exam-container" class="hidden">
         <header>
             <div class="exam-info">TEST OF ENGLISH AS A FOREIGN LANGUAGE</div>
             <div id="section-info">Loading...</div>

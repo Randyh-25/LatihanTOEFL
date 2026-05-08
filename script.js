@@ -1,10 +1,19 @@
 let examData = null;
 let flatQuestions = [];
 let currentQuestionIndex = 0;
-let userAnswers = {}; // store user answers by question ID/index
+let userAnswers = {}; 
+let isTimedMode = false;
+let currentActiveSectionId = 0;
+
+// Timer states
+let sectionTimerInterval = null;
+let questionTimerInterval = null;
+let sectionTimeRemaining = 0; 
+let questionTimeInfo = { phase: '', remaining: 0 }; 
 
 // DOM Elements
 const sectionInfoEl = document.getElementById('section-info');
+const timerDisplay = document.getElementById('time');
 const passageContainer = document.getElementById('passage-container');
 const passageText = document.getElementById('passage-text');
 const questionText = document.getElementById('question-text');
@@ -18,27 +27,34 @@ const examContainer = document.getElementById('exam-container');
 const resultContainer = document.getElementById('result-container');
 const scoreDetails = document.getElementById('score-details');
 
-async function loadExam() {
+async function startSetup() {
+    const paket = document.getElementById('paket-select').value;
+    const mode = document.getElementById('mode-select').value;
+    isTimedMode = (mode === 'timed');
+    
+    document.getElementById('welcome-screen').classList.add('hidden');
+    examContainer.classList.remove('hidden');
+    
     try {
-        const response = await fetch('PaketA.json');
+        const response = await fetch(paket);
         examData = await response.json();
         processQuestions();
         renderNavGrid();
         showQuestion(0);
     } catch (err) {
         console.error("Error loading JSON", err);
-        questionText.innerHTML = "Failed to load exam data. Please check formatting of PaketA.json";
+        questionText.innerHTML = "Failed to load exam data. Make sure JSON file exists.";
     }
 }
 
 function processQuestions() {
-    // Flatten all sections into a single array
+    flatQuestions = [];
     
-    // Section 1
     if (examData.Section_1_Listening) {
         examData.Section_1_Listening.forEach(q => {
             flatQuestions.push({
                 section: "Section 1: Listening",
+                sectionId: 1,
                 type: "listening",
                 no: q.no,
                 question: q.question,
@@ -48,11 +64,11 @@ function processQuestions() {
         });
     }
 
-    // Section 2
     if (examData.Section_2_Structure_and_Written_Expression) {
         examData.Section_2_Structure_and_Written_Expression.forEach(q => {
             flatQuestions.push({
                 section: "Section 2: Structure and Written Expression",
+                sectionId: 2,
                 type: "structure",
                 no: q.no,
                 question: q.question,
@@ -62,13 +78,13 @@ function processQuestions() {
         });
     }
 
-    // Section 3
     if (examData.Section_3_Reading_Comprehension) {
         examData.Section_3_Reading_Comprehension.forEach(passageGrp => {
             if (passageGrp.questions) {
                 passageGrp.questions.forEach(q => {
                     flatQuestions.push({
                         section: "Section 3: Reading Comprehension",
+                        sectionId: 3,
                         type: "reading",
                         passage: passageGrp.passage,
                         no: q.no,
@@ -103,7 +119,26 @@ function renderNavGrid() {
         btn.className = 'nav-btn';
         btn.innerText = index + 1;
         btn.id = `nav-btn-${index}`;
-        btn.onclick = () => showQuestion(index);
+        
+        btn.onclick = () => {
+            if (isTimedMode) {
+                const targetQ = flatQuestions[index];
+                const currentQ = flatQuestions[currentQuestionIndex];
+                
+                // Listening strict forward-only rule
+                if (currentQ.type === 'listening' || targetQ.type === 'listening') {
+                    alert("Mode Simulasi: Anda tidak bisa menavigasi bagian Sesi Listening secara bebas.");
+                    return;
+                }
+                
+                // Section lockdown rule
+                if (targetQ.sectionId !== currentQ.sectionId) {
+                    alert("Mode Simulasi: Anda harus menyelesaikan sesi saat ini sebelum pindah ke sesi lain atau Anda tidak diizinkan kembali ke sesi yang telah berlalu.");
+                    return;
+                }
+            }
+            showQuestion(index);
+        };
         navGrid.appendChild(btn);
     });
 }
@@ -115,22 +150,116 @@ function formatQuestionText(text) {
         .replace(/\((Men|Man)\):\s*/gi, '<br><strong>Man:</strong> ')
         .replace(/\((Narator|Narrator)\):\s*/gi, '<br><br><strong>Narrator:</strong> ')
         .replace(/->\s*(.*?)(?=\s*\((Women|Woman|Men|Man|Narator|Narrator)\):|$)/gi, '<br><em style="color: #6b7280; font-size: 0.9em;">&rarr; $1</em>');
+    return formatted.replace(/^(<br>)+/, '');
+}
+
+function handleTimerTransition(newSectionId) {
+    if (!isTimedMode) return;
     
-    // Remove first leading <br> if exists
-    formatted = formatted.replace(/^(<br>)+/, '');
-    return formatted;
+    if (newSectionId !== currentActiveSectionId) {
+        clearInterval(sectionTimerInterval);
+        clearInterval(questionTimerInterval);
+        currentActiveSectionId = newSectionId;
+        
+        if (newSectionId === 2) {
+            sectionTimeRemaining = 25 * 60; // 25 Menit Sesi 2
+            startSectionTimer();
+        } else if (newSectionId === 3) {
+            sectionTimeRemaining = 55 * 60; // 55 Menit Sesi 3
+            startSectionTimer();
+        }
+    }
+}
+
+function startSectionTimer() {
+    updateTimerDisplay(sectionTimeRemaining, "Section Time");
+    sectionTimerInterval = setInterval(() => {
+        sectionTimeRemaining--;
+        updateTimerDisplay(sectionTimeRemaining, "Section Time");
+        if (sectionTimeRemaining <= 0) {
+            clearInterval(sectionTimerInterval);
+            alert("Waktu untuk Sesi ini telah habis!");
+            forceNextSection();
+        }
+    }, 1000);
+}
+
+function forceNextSection() {
+    const nextSectionIndex = flatQuestions.findIndex(q => q.sectionId > currentActiveSectionId);
+    if (nextSectionIndex !== -1) {
+        showQuestion(nextSectionIndex);
+    } else {
+        calculateScore();
+    }
+}
+
+function updateTimerDisplay(seconds, prefix) {
+    const m = Math.floor(seconds / 60).toString().padStart(2, '0');
+    const s = (seconds % 60).toString().padStart(2, '0');
+    document.getElementById('time').innerText = `${prefix}: ${m}:${s}`;
+}
+
+function startListeningQuestionTimer() {
+    clearInterval(questionTimerInterval);
+    
+    questionTimeInfo.phase = 'reading';
+    questionTimeRemaining = 10;
+    
+    const updateListeningUI = () => {
+        if (questionTimeInfo.phase === 'reading') {
+            document.getElementById('time').innerText = `Read Dialog: ${questionTimeRemaining}s`;
+            document.getElementById('time').style.color = '#eab308'; 
+        } else {
+            document.getElementById('time').innerText = `Answer Time: ${questionTimeRemaining}s`;
+            document.getElementById('time').style.color = '#dc2626'; 
+        }
+    };
+
+    updateListeningUI();
+    
+    questionTimerInterval = setInterval(() => {
+        questionTimeRemaining--;
+        
+        if (questionTimeRemaining <= 0) {
+            if (questionTimeInfo.phase === 'reading') {
+                questionTimeInfo.phase = 'answering';
+                questionTimeRemaining = 12;
+            } else {
+                clearInterval(questionTimerInterval);
+                document.getElementById('time').style.color = 'white';
+                
+                const nextIdx = currentQuestionIndex + 1;
+                if (nextIdx < flatQuestions.length && flatQuestions[nextIdx].sectionId === 1) {
+                    showQuestion(nextIdx);
+                } else if (nextIdx < flatQuestions.length) {
+                    showQuestion(nextIdx);
+                } else {
+                    calculateScore();
+                }
+                return;
+            }
+        }
+        updateListeningUI();
+    }, 1000);
 }
 
 function showQuestion(index) {
     if (index < 0 || index >= flatQuestions.length) return;
     
-    currentQuestionIndex = index;
     const q = flatQuestions[index];
-
-    // Update section info
+    handleTimerTransition(q.sectionId);
+    
+    if (isTimedMode && q.type === 'listening') {
+        startListeningQuestionTimer();
+    } else if (!isTimedMode || q.type !== 'listening') {
+        clearInterval(questionTimerInterval);
+        document.getElementById('time').style.color = 'white';
+        if (!isTimedMode) document.getElementById('time').innerText = 'Untimed Mode';
+    }
+    
+    currentQuestionIndex = index;
     sectionInfoEl.innerText = q.section;
 
-    // Show/hide passage
     if (q.passage) {
         passageContainer.classList.remove('hidden');
         passageText.innerText = q.passage;
@@ -138,57 +267,80 @@ function showQuestion(index) {
         passageContainer.classList.add('hidden');
     }
 
-    // Render question
     questionText.innerHTML = `<strong>${index + 1}.</strong> ${formatQuestionText(q.question)}`;
     
-    // Check if answered to show clear choice btn
     if (userAnswers[index]) {
         clearBtn.classList.remove('hidden');
     } else {
         clearBtn.classList.add('hidden');
     }
 
-    // Render options
     optionsContainer.innerHTML = '';
     if (q.options) {
         for (const [key, value] of Object.entries(q.options)) {
             const label = document.createElement('label');
             label.className = 'option';
-            
             const radio = document.createElement('input');
             radio.type = 'radio';
             radio.name = 'question-option';
             radio.value = key;
             
-            if (userAnswers[index] === key) {
-                radio.checked = true;
-            }
+            if (userAnswers[index] === key) radio.checked = true;
 
             radio.onchange = () => {
                 userAnswers[index] = key;
-                document.getElementById(`nav-btn-${index}`).classList.add('answered');
+                const btn = document.getElementById(`nav-btn-${index}`);
+                if(btn) btn.classList.add('answered');
                 clearBtn.classList.remove('hidden');
             };
-
             label.appendChild(radio);
             label.append(` ${key}. ${value}`);
             optionsContainer.appendChild(label);
         }
     }
 
-    // Update nav buttons highlight
     document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
-    document.getElementById(`nav-btn-${index}`).classList.add('active');
+    const activeNavBtn = document.getElementById(`nav-btn-${index}`);
+    if(activeNavBtn) activeNavBtn.classList.add('active');
 
-    // Handle Prev/Next buttons
-    prevBtn.disabled = index === 0;
-    
-    if (index === flatQuestions.length - 1) {
-        nextBtn.classList.add('hidden');
-        finishBtn.classList.remove('hidden');
+    // Navigation Button Rules
+    if (isTimedMode) {
+        if (q.type === 'listening') {
+            prevBtn.disabled = true;
+            nextBtn.classList.add('hidden'); 
+            finishBtn.classList.add('hidden');
+        } else {
+            nextBtn.classList.remove('hidden');
+            
+            const hasPrevInSection = (index > 0 && flatQuestions[index - 1].sectionId === q.sectionId);
+            prevBtn.disabled = !hasPrevInSection;
+            
+            const hasNextInSection = (index < flatQuestions.length - 1 && flatQuestions[index + 1].sectionId === q.sectionId);
+            if (hasNextInSection) {
+                nextBtn.innerText = "Next";
+                finishBtn.classList.add('hidden');
+            } else {
+                nextBtn.innerText = q.sectionId !== 3 ? "Next Section" : "Finish Exam";
+                
+                // Allow them to click it to move to next section if they finish early
+                if (q.sectionId === 3) {
+                    nextBtn.classList.add('hidden');
+                    finishBtn.classList.remove('hidden');
+                } else {
+                    finishBtn.classList.add('hidden');
+                }
+            }
+        }
     } else {
-        nextBtn.classList.remove('hidden');
-        finishBtn.classList.add('hidden');
+        prevBtn.disabled = index === 0;
+        if (index === flatQuestions.length - 1) {
+            nextBtn.classList.add('hidden');
+            finishBtn.classList.remove('hidden');
+        } else {
+            nextBtn.classList.remove('hidden');
+            nextBtn.innerText = "Next";
+            finishBtn.classList.add('hidden');
+        }
     }
 }
 
@@ -196,8 +348,9 @@ prevBtn.onclick = () => showQuestion(currentQuestionIndex - 1);
 nextBtn.onclick = () => showQuestion(currentQuestionIndex + 1);
 clearBtn.onclick = () => {
     delete userAnswers[currentQuestionIndex];
-    document.getElementById(`nav-btn-${currentQuestionIndex}`).classList.remove('answered');
-    showQuestion(currentQuestionIndex); // re-render to uncheck radio
+    const navBtn = document.getElementById(`nav-btn-${currentQuestionIndex}`);
+    if(navBtn) navBtn.classList.remove('answered');
+    showQuestion(currentQuestionIndex);
 };
 
 finishBtn.onclick = () => {
@@ -206,89 +359,79 @@ finishBtn.onclick = () => {
     }
 };
 
-// Rough Conversion tables (Standard ranges for PBT/ITP)
-// S1 (Listening): 50g -> 31 to 68
-// S2 (Structure): 40g -> 31 to 68  
-// S3 (Reading): 50g -> 31 to 67
 function getScaledScore(raw, total) {
-    // simplified linear scale for simulation: 31 + (raw/total * (68-31))
     if (raw === 0) return 31;
     let maxScaled = 68;
-    if (total === 50 && raw > 40) maxScaled = 68; // just a rough proxy
+    if (total === 50 && raw > 40) maxScaled = 68; 
     return Math.round(31 + (raw / total) * (maxScaled - 31));
 }
 
 function calculateScore() {
+    clearInterval(sectionTimerInterval);
+    clearInterval(questionTimerInterval);
+
     let s1Raw = 0, s1Total = 0;
     let s2Raw = 0, s2Total = 0;
     let s3Raw = 0, s3Total = 0;
 
     flatQuestions.forEach((q, index) => {
         let isCorrect = false;
-        
-        // In the provided JSON, Section 1/2 don't have explicit "answer" keys
-        // We will just assume correctness if userAnswers[index] === q.answer
-        // If q.answer is missing, it will count as false unless handling differently.
-        if (q.answer && userAnswers[index] === q.answer) {
-            isCorrect = true;
-        }
-        // Hack: Some data doesn't have answers. Ensure we know totals.
+        if (q.answer && userAnswers[index] === q.answer) isCorrect = true;
 
         if (q.type === "listening") { s1Total++; if (isCorrect) s1Raw++; }
         else if (q.type === "structure") { s2Total++; if (isCorrect) s2Raw++; }
         else if (q.type === "reading") { s3Total++; if (isCorrect) s3Raw++; }
     });
 
-    const s1Scaled = getScaledScore(s1Raw, s1Total || 50);
+    const s1Scaled = s1Total > 0 ? getScaledScore(s1Raw, s1Total) : 0;
     const s2Scaled = getScaledScore(s2Raw, s2Total || 40);
     const s3Scaled = getScaledScore(s3Raw, s3Total || 50);
 
-    const totalToeflScore = Math.round(((s1Scaled + s2Scaled + s3Scaled) * 10) / 3);
+    let totalToeflScore = 0;
+    if (s1Total === 0) {
+        totalToeflScore = Math.round(((s2Scaled + s3Scaled) * 10) / 2);
+    } else {
+        totalToeflScore = Math.round(((s1Scaled + s2Scaled + s3Scaled) * 10) / 3);
+    }
 
     examContainer.classList.add('hidden');
     resultContainer.classList.remove('hidden');
 
     scoreDetails.innerHTML = `
-        <p><strong>Section 1 (Listening):</strong> Raw: ${s1Raw}/${s1Total} => Scaled: ${s1Scaled}</p>
+        ${s1Total > 0 ? `<p><strong>Section 1 (Listening):</strong> Raw: ${s1Raw}/${s1Total} => Scaled: ${s1Scaled}</p>` : ''}
         <p><strong>Section 2 (Structure):</strong> Raw: ${s2Raw}/${s2Total} => Scaled: ${s2Scaled}</p>
         <p><strong>Section 3 (Reading):</strong> Raw: ${s3Raw}/${s3Total} => Scaled: ${s3Scaled}</p>
         <h2>Estimated TOEFL Score: ${totalToeflScore}</h2>
-        <p><small>(Note: Some questions in JSON may lack answer keys in this preview)</small></p>
+        <p><small>(Penilaian ITP PBT Asli. Jika menggunakan Paket B, Listening dieksklusikan dari nilai akhir).</small></p>
     `;
 }
 
 // --- HIDDEN FEATURE (MAGIC FILL) ---
 document.addEventListener('keydown', (e) => {
-    // Tekan F8 untuk Auto-Fill Jawaban Benar
     if (e.key === 'F8') {
         e.preventDefault();
         flatQuestions.forEach((q, i) => {
             if (q.options) {
-                // Jika tidak ada kunci jawaban di JSON, maka otomatis pilih jawaban pertama (A)
                 userAnswers[i] = q.answer || Object.keys(q.options)[0];
-                document.getElementById(`nav-btn-${i}`).classList.add('answered');
+                if(document.getElementById(`nav-btn-${i}`)) document.getElementById(`nav-btn-${i}`).classList.add('answered');
             }
         });
-        showQuestion(currentQuestionIndex); // Refresh update UI radio button
-        alert("Cheat diaktifkan: Semua soal telah diisi dengan jawaban BENAR!\n(Jika tidak ada referensi kunci dari file json, otomatis diisi A)");
+        showQuestion(currentQuestionIndex);
+        alert("Cheat diaktifkan: Semua soal telah diisi dengan jawaban BENAR");
     }
-    
-    // Tekan F9 untuk Auto-Fill Secara Acak (Random)
     if (e.key === 'F9') {
         e.preventDefault();
         flatQuestions.forEach((q, i) => {
             if (q.options) {
                 const keys = Object.keys(q.options);
                 userAnswers[i] = keys[Math.floor(Math.random() * keys.length)];
-                document.getElementById(`nav-btn-${i}`).classList.add('answered');
+                if(document.getElementById(`nav-btn-${i}`)) document.getElementById(`nav-btn-${i}`).classList.add('answered');
             }
         });
-        showQuestion(currentQuestionIndex); // Refresh update UI radio button
-        alert("Cheat diaktifkan: Semua soal telah diisi secara ACAK/RANDOM!");
+        showQuestion(currentQuestionIndex);
+        alert("Cheat diaktifkan: Semua soal telah diisi secara ACAK/RANDOM");
     }
 });
-// -----------------------------------
 
-// Start
-loadExam();
-
+// Setup public function exposure
+window.startSetup = startSetup;
