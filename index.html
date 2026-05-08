@@ -122,7 +122,22 @@
     <div id="result-container" class="hidden">
         <h1>Exam Results</h1>
         <div id="score-details"></div>
-        <button id="restart-btn" onclick="location.reload()">Restart Exam</button>
+        <div style="display: flex; gap: 15px; margin-top: 10px;">
+            <button id="review-btn" onclick="showReview()" style="background-color: #f59e0b;">Review Answers</button>
+            <button id="restart-btn" onclick="location.reload()">Restart Exam</button>
+        </div>
+    </div>
+
+    <!-- Halaman Review Jawaban -->
+    <div id="review-container" class="hidden" style="height: 100vh; display: flex; flex-direction: column;">
+        <header>
+            <button onclick="hideReview()" style="background-color: #4b5563;">&larr; Back to Results</button>
+            <div class="exam-info">Answer Review</div>
+            <div></div> <!-- for flex spacing -->
+        </header>
+        <main style="flex: 1; overflow-y: auto; padding: 20px; background: #fff;">
+            <div id="review-content" style="max-width: 800px; margin: 0 auto;"></div>
+        </main>
     </div>
 
     <script src="script.js"></script>

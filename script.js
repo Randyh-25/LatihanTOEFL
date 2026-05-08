@@ -478,3 +478,74 @@ document.addEventListener('keydown', (e) => {
 
 // Setup public function exposure
 window.startSetup = startSetup;
+window.showReview = showReview;
+window.hideReview = hideReview;
+
+// --- REVIEW FEATURE ---
+function showReview() {
+    document.getElementById('result-container').classList.add('hidden');
+    document.getElementById('review-container').classList.remove('hidden');
+    renderReview();
+}
+
+function hideReview() {
+    document.getElementById('review-container').classList.add('hidden');
+    document.getElementById('result-container').classList.remove('hidden');
+}
+
+function renderReview() {
+    const rvContent = document.getElementById('review-content');
+    rvContent.innerHTML = '';
+    
+    let currentSection = '';
+
+    flatQuestions.forEach((q, i) => {
+        if (q.section !== currentSection) {
+            currentSection = q.section;
+            const secTitle = document.createElement('h2');
+            secTitle.innerText = currentSection;
+            secTitle.style.marginTop = '30px';
+            secTitle.style.color = '#1e3a8a';
+            rvContent.appendChild(secTitle);
+        }
+
+        const userAnswer = userAnswers[i];
+        const correctAns = q.answer;
+        const isCorrect = (userAnswer && correctAns && userAnswer === correctAns);
+        const explanation = q.explanation || "Tidak ada rincian penjelasan (explanation) di dalam file JSON untuk soal ini.";
+        
+        const qDiv = document.createElement('div');
+        qDiv.className = 'review-item';
+
+        // Teks soal
+        const qText = document.createElement('div');
+        qText.className = 'review-question';
+        qText.innerHTML = `<strong>${i + 1}.</strong> ${formatQuestionText(q.question)}`;
+        
+        // Kotak Jawaban
+        const ansInfo = document.createElement('div');
+        
+        if (!userAnswer) {
+            ansInfo.className = 'ans-box ans-missed';
+            ansInfo.innerHTML = `Anda tidak menjawab soal ini. <br>Jawaban Benar: <strong>${correctAns || '?'}</strong>`;
+        } else if (isCorrect) {
+            ansInfo.className = 'ans-box ans-correct';
+            ansInfo.innerHTML = `Jawaban Anda Benar (<strong>${userAnswer}</strong>)`;
+        } else {
+            ansInfo.className = 'ans-box ans-wrong';
+            // Coba ambil teks label opsinya buat ditampilkan jika ada
+            let correctLabel = correctAns ? (q.options[correctAns] || '') : '?';
+            ansInfo.innerHTML = `Jawaban Anda Salah (<strong>${userAnswer}</strong>)<br>Jawaban Benar: <strong>${correctAns}</strong>. ${correctLabel}`;
+        }
+        
+        // Kotak Alasan/Penjelasan
+        const expInfo = document.createElement('div');
+        expInfo.className = 'review-explanation';
+        expInfo.innerHTML = `<strong>Penjelasan:</strong><br>${explanation}`;
+
+        qDiv.appendChild(qText);
+        qDiv.appendChild(ansInfo);
+        qDiv.appendChild(expInfo);
+        rvContent.appendChild(qDiv);
+    });
+}
