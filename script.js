@@ -4,6 +4,7 @@ let currentQuestionIndex = 0;
 let userAnswers = {}; 
 let isTimedMode = false;
 let currentActiveSectionId = 0;
+let lastSeenSectionId = 0; // Track untuk memunculkan hint layar directions
 
 // Timer states
 let sectionTimerInterval = null;
@@ -26,6 +27,26 @@ const finishBtn = document.getElementById('finish-btn');
 const examContainer = document.getElementById('exam-container');
 const resultContainer = document.getElementById('result-container');
 const scoreDetails = document.getElementById('score-details');
+
+const sdScreen = document.getElementById('section-directions-screen');
+const sdTitle = document.getElementById('sd-title');
+const sdContent = document.getElementById('sd-content');
+const sdBtn = document.getElementById('sd-btn');
+
+const SECTION_HINTS = {
+    1: {
+        title: "Section 1: Listening Comprehension",
+        content: "Mengevaluasi kemampuan Anda memahami bahasa lisan bahasa Inggris.<br><br><strong>Cara Menjawab (Sesuai TOEFL):</strong><br>Dengarkan/baca baik-baik percakapan pendek yang disajikan. Setelah dialog selesai, akan ada sebuah pertanyaan. Anda harus memilih satu jawaban terbaik (A, B, C, atau D) dengan mengeklik opsi yang tersedia.<br><br><strong>Tips:</strong> Semua rekaman audio aslinya mengalir terus menerus tanpa bisa di-pause. Pada mode dengan waktu, Anda punya 10 detik membaca opsi dan 12 detik untuk klik jawaban sebelum dipindah otomatis."
+    },
+    2: {
+        title: "Section 2: Structure and Written Expression",
+        content: "Bagian ini dirancang untuk menguji kemampuan gramatikal bahasa Inggris standar.<br><br><strong>Cara Menjawab (Sesuai TOEFL):</strong><br>1. <strong>Structure (No 1-15):</strong> Anda akan melihat kalimat rumpang. Pilih salah satu opsi (A, B, C, atau D) yang paling tepat untuk melengkapi kalimat tersebut.<br>2. <strong>Written Expression (No 16-40):</strong> Anda akan melihat kalimat dengan 4 kata/frasa yang digarisbawahi. Pilih satu kata/frasa yang SALAH secara tata bahasa.<br><br><strong>Tips:</strong> Ini adalah balapan dengan waktu. Alokasikan maksimal 30-40 detik per soal dengan klik jawaban langsung."
+    },
+    3: {
+        title: "Section 3: Reading Comprehension",
+        content: "Menguji kemampuan membaca bahan gaya akademis.<br><br><strong>Cara Menjawab (Sesuai TOEFL):</strong><br>Anda akan diberikan teks bacaan (passage) di sebelah kiri/atas dan soal di area pertanyaan. Jawablah soal berdasarkan informasi yang tertulis eksplisit maupun tersirat dalam teks. Klik pada salah satu opsi (A, B, C, atau D) sebagai jawaban paling benar.<br><br><strong>Tips:</strong> Jangan baca teks sepenuhnya dulu. Lakukan teknik <em>skimming</em> (membaca sekilas kalimat pertama tiap paragraf), lalu langsung baca soal dan cari letak kata kuncinya di dalam teks. Rata-rata 1 menit per soal."
+    }
+};
 
 async function startSetup() {
     const paket = document.getElementById('paket-select').value;
@@ -247,6 +268,28 @@ function showQuestion(index) {
     if (index < 0 || index >= flatQuestions.length) return;
     
     const q = flatQuestions[index];
+
+    // Cek apakah masuk ke seksi baru (maka tunjukkan Overlay Layar Hint)
+    if (q.sectionId !== lastSeenSectionId) {
+        // Tampilkan overlay arahan seksi
+        sdTitle.innerText = SECTION_HINTS[q.sectionId].title;
+        sdContent.innerHTML = SECTION_HINTS[q.sectionId].content;
+        sdScreen.classList.remove('hidden');
+
+        // Pause behavior dengan cara mengosongkan timer di background (jika ada) hingga sdBtn di click
+        clearInterval(sectionTimerInterval);
+        clearInterval(questionTimerInterval);
+
+        // Hanya daftarkan event onclick sekali saja menghindari duplikasi stack
+        sdBtn.onclick = () => {
+            sdScreen.classList.add('hidden');
+            lastSeenSectionId = q.sectionId;
+            showQuestion(index); // Jalankan ulang dengan ID seksi yg sudah disamakan
+        };
+        
+        return; // Hentikan eksekusi draw soal disini, lalu lanjutkan nanti dari dalam event handler button
+    }
+
     handleTimerTransition(q.sectionId);
     
     if (isTimedMode && q.type === 'listening') {
