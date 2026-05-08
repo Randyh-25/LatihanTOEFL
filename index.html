@@ -23,6 +23,12 @@
                 <div id="question-area">
                     <div id="question-text"></div>
                     <div id="options-container"></div>
+                    <div id="action-buttons" style="margin-top: 20px; display: flex; gap: 10px; border-top: 1px solid #eee; padding-top: 15px;">
+                        <button id="clear-btn" class="hidden" style="background-color: #dc2626; margin-right: auto;">Clear my choice</button>
+                        <button id="prev-btn" disabled>Previous</button>
+                        <button id="next-btn">Next</button>
+                        <button id="finish-btn" class="hidden" style="background-color: #16a34a;">Finish Exam</button>
+                    </div>
                 </div>
             </div>
             
@@ -31,12 +37,6 @@
                 <div id="nav-grid"></div>
             </aside>
         </main>
-
-        <footer>
-            <button id="prev-btn" disabled>Previous</button>
-            <button id="next-btn">Next</button>
-            <button id="finish-btn" class="hidden">Finish Exam</button>
-        </footer>
     </div>
 
     <div id="result-container" class="hidden">

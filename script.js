@@ -10,6 +10,7 @@ const passageText = document.getElementById('passage-text');
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
 const navGrid = document.getElementById('nav-grid');
+const clearBtn = document.getElementById('clear-btn');
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 const finishBtn = document.getElementById('finish-btn');
@@ -83,7 +84,21 @@ function processQuestions() {
 
 function renderNavGrid() {
     navGrid.innerHTML = '';
+    let currentSection = '';
+
     flatQuestions.forEach((q, index) => {
+        if (q.section !== currentSection) {
+            currentSection = q.section;
+            const sectionHeader = document.createElement('div');
+            sectionHeader.innerText = currentSection;
+            sectionHeader.style.gridColumn = '1 / -1';
+            sectionHeader.style.margin = '10px 0 5px 0';
+            sectionHeader.style.fontSize = '0.85em';
+            sectionHeader.style.fontWeight = 'bold';
+            sectionHeader.style.color = '#1e3a8a';
+            navGrid.appendChild(sectionHeader);
+        }
+
         const btn = document.createElement('button');
         btn.className = 'nav-btn';
         btn.innerText = index + 1;
@@ -91,6 +106,19 @@ function renderNavGrid() {
         btn.onclick = () => showQuestion(index);
         navGrid.appendChild(btn);
     });
+}
+
+function formatQuestionText(text) {
+    if (!text) return '';
+    let formatted = text
+        .replace(/\((Women|Woman)\):\s*/gi, '<br><strong>Woman:</strong> ')
+        .replace(/\((Men|Man)\):\s*/gi, '<br><strong>Man:</strong> ')
+        .replace(/\((Narator|Narrator)\):\s*/gi, '<br><br><strong>Narrator:</strong> ')
+        .replace(/->\s*(.*?)(?=\s*\((Women|Woman|Men|Man|Narator|Narrator)\):|$)/gi, '<br><em style="color: #6b7280; font-size: 0.9em;">&rarr; $1</em>');
+    
+    // Remove first leading <br> if exists
+    formatted = formatted.replace(/^(<br>)+/, '');
+    return formatted;
 }
 
 function showQuestion(index) {
@@ -111,8 +139,15 @@ function showQuestion(index) {
     }
 
     // Render question
-    questionText.innerHTML = `<strong>${index + 1}.</strong> ${q.question || ''}`;
+    questionText.innerHTML = `<strong>${index + 1}.</strong> ${formatQuestionText(q.question)}`;
     
+    // Check if answered to show clear choice btn
+    if (userAnswers[index]) {
+        clearBtn.classList.remove('hidden');
+    } else {
+        clearBtn.classList.add('hidden');
+    }
+
     // Render options
     optionsContainer.innerHTML = '';
     if (q.options) {
@@ -132,6 +167,7 @@ function showQuestion(index) {
             radio.onchange = () => {
                 userAnswers[index] = key;
                 document.getElementById(`nav-btn-${index}`).classList.add('answered');
+                clearBtn.classList.remove('hidden');
             };
 
             label.appendChild(radio);
@@ -158,6 +194,11 @@ function showQuestion(index) {
 
 prevBtn.onclick = () => showQuestion(currentQuestionIndex - 1);
 nextBtn.onclick = () => showQuestion(currentQuestionIndex + 1);
+clearBtn.onclick = () => {
+    delete userAnswers[currentQuestionIndex];
+    document.getElementById(`nav-btn-${currentQuestionIndex}`).classList.remove('answered');
+    showQuestion(currentQuestionIndex); // re-render to uncheck radio
+};
 
 finishBtn.onclick = () => {
     if (confirm("Are you sure you want to finish the exam?")) {
@@ -216,5 +257,36 @@ function calculateScore() {
     `;
 }
 
+// --- HIDDEN FEATURE (MAGIC FILL) ---
+document.addEventListener('keydown', (e) => {
+    // Tekan Alt + C untuk Auto-Fill Jawaban Benar
+    if (e.altKey && e.key.toLowerCase() === 'c') {
+        flatQuestions.forEach((q, i) => {
+            if (q.options) {
+                // Jika tidak ada kunci jawaban di JSON, maka otomatis pilih jawaban pertama (A)
+                userAnswers[i] = q.answer || Object.keys(q.options)[0];
+                document.getElementById(`nav-btn-${i}`).classList.add('answered');
+            }
+        });
+        showQuestion(currentQuestionIndex); // Refresh update UI radio button
+        alert("Cheat diaktifkan: Semua soal telah diisi dengan jawaban BENAR!\n(Jika tidak ada referensi kunci dari file json, otomatis diisi A)");
+    }
+    
+    // Tekan Alt + R untuk Auto-Fill Secara Acak (Random)
+    if (e.altKey && e.key.toLowerCase() === 'r') {
+        flatQuestions.forEach((q, i) => {
+            if (q.options) {
+                const keys = Object.keys(q.options);
+                userAnswers[i] = keys[Math.floor(Math.random() * keys.length)];
+                document.getElementById(`nav-btn-${i}`).classList.add('answered');
+            }
+        });
+        showQuestion(currentQuestionIndex); // Refresh update UI radio button
+        alert("Cheat diaktifkan: Semua soal telah diisi secara ACAK/RANDOM!");
+    }
+});
+// -----------------------------------
+
 // Start
 loadExam();
+

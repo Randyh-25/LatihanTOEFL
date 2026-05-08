@@ -105,8 +105,9 @@ main {
 
 .nav-btn.answered {
     background: #4ade80;
-    color: white;
-    border-color: #2563eb;
+    color: #000;
+    font-weight: bold;
+    border-color: #16a34a;
 }
 
 .nav-btn.active {
@@ -114,13 +115,7 @@ main {
     font-weight: bold;
 }
 
-footer {
-    background: #ddd;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
+/* Footer removed */
 
 button {
     padding: 10px 20px;
