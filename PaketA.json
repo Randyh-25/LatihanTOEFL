@@ -724,7 +724,7 @@
         "A": "made from",
         "B": "milky",
         "C": "substantial",
-        "D": "trees"
+        "D": "trees of"
       },
       "answer": "C"
     },
@@ -732,7 +732,7 @@
       "no": 17,
       "question": "The state with the most large production of tobacco products is North Carolina.",
       "options": {
-        "A": "The state",
+        "A": "with the",
         "B": "most large",
         "C": "production",
         "D": "is"
@@ -745,7 +745,7 @@
       "options": {
         "A": "like",
         "B": "thousands",
-        "C": "read",
+        "C": "among",
         "D": "writing"
       },
       "answer": "D"
@@ -754,10 +754,10 @@
       "no": 19,
       "question": "The first professional baseball game it took place in 1846 when the New York Nine defeated the New York Knickerbockers 23 to 1.",
       "options": {
-        "A": "it took place",
-        "B": "when",
-        "C": "defeated",
-        "D": "23 to 1"
+        "A": "The first",
+        "B": "it",
+        "C": "when the",
+        "D": "defeated"
       },
       "answer": "A"
     },
@@ -767,8 +767,8 @@
       "options": {
         "A": "More than",
         "B": "kinds",
-        "C": "is manufactured",
-        "D": "United States"
+        "C": "is",
+        "D": "manufactured"
       },
       "answer": "C"
     },
@@ -778,7 +778,7 @@
       "options": {
         "A": "Among",
         "B": "accomplishment",
-        "C": "was",
+        "C": "his",
         "D": "to establish"
       },
       "answer": "B"
@@ -787,10 +787,10 @@
       "no": 22,
       "question": "The state of New Mexico is not densely population, with an average of only four people per square kilometer.",
       "options": {
-        "A": "population",
-        "B": "an average",
-        "C": "only",
-        "D": "square"
+        "A": "is not",
+        "B": "population",
+        "C": "with an",
+        "D": "only"
       },
       "answer": "A"
     },
@@ -799,9 +799,9 @@
       "question": "Alike bases which cause litmus to turn blue, acids cause litmus to turn red.",
       "options": {
         "A": "Alike",
-        "B": "cause",
-        "C": "to turn",
-        "D": "red"
+        "B": "wich",
+        "C": "acids",
+        "D": "cause"
       },
       "answer": "A"
     },
@@ -810,8 +810,8 @@
       "question": "Plant cuttings who are placed in water will develop roots and can then be planted in soil.",
       "options": {
         "A": "who",
-        "B": "are placed",
-        "C": "can then",
+        "B": "placed",
+        "C": "then be",
         "D": "in soil"
       },
       "answer": "A"
@@ -820,10 +820,10 @@
       "no": 25,
       "question": "Lead poisoning can result if to much lead builds up in the body.",
       "options": {
-        "A": "result",
-        "B": "to much",
+        "A": "poisoning",
+        "B": "to",
         "C": "builds up",
-        "D": "in the body"
+        "D": "the body"
       },
       "answer": "B"
     },
@@ -832,9 +832,9 @@
       "question": "Many American childrens learned to read from the more than 120 million copies of McGuffy's Reader.",
       "options": {
         "A": "childrens",
-        "B": "learned",
-        "C": "more than",
-        "D": "copies"
+        "B": "to read",
+        "C": "the",
+        "D": "more than"
       },
       "answer": "A"
     },
@@ -842,10 +842,10 @@
       "no": 27,
       "question": "In A Farewell to Arms (1926) Hemingway tried to capture the feelings the American people at the end of World War I.",
       "options": {
-        "A": "In",
+        "A": "tried",
         "B": "to capture",
-        "C": "feelings the",
-        "D": "the end of"
+        "C": "feelings",
+        "D": "the end"
       },
       "answer": "C"
     },
@@ -853,10 +853,10 @@
       "no": 28,
       "question": "From 1785 to 1790, the capital of the U.S. is located in New York City.",
       "options": {
-        "A": "From",
-        "B": "is located",
-        "C": "in",
-        "D": "New York City"
+        "A": "to",
+        "B": "the",
+        "C": "capital",
+        "D": "is"
       },
       "answer": "B"
     },
@@ -866,8 +866,8 @@
       "options": {
         "A": "Many",
         "B": "were fought",
-        "C": "than",
-        "D": "other"
+        "C": "other",
+        "D": "state"
       },
       "answer": "A"
     },
@@ -875,9 +875,9 @@
       "no": 30,
       "question": "When T. S. Eliot's The Wasteland appeared in 1922, critics were divided as to how well it was wrote.",
       "options": {
-        "A": "When",
-        "B": "appeared",
-        "C": "were divided",
+        "A": "critics",
+        "B": "as to",
+        "C": "well",
         "D": "wrote"
       },
       "answer": "D"
@@ -887,9 +887,9 @@
       "question": "The Wagner Act guarantees workers in the U.S. the right to organizing labor unions.",
       "options": {
         "A": "guarantees",
-        "B": "in the",
-        "C": "to organizing",
-        "D": "labor unions"
+        "B": "workers",
+        "C": "the right",
+        "D": "organizing"
       },
       "answer": "C"
     },
@@ -897,10 +897,10 @@
       "no": 32,
       "question": "According the kinetic theory, all matter consists of constantly moving particles.",
       "options": {
-        "A": "According",
-        "B": "consists of",
-        "C": "moving",
-        "D": "particles"
+        "A": "According the",
+        "B": "consists",
+        "C": "constantly",
+        "D": "moving"
       },
       "answer": "A"
     },
@@ -920,7 +920,7 @@
       "question": "The isotopes of one element can have different weighs.",
       "options": {
         "A": "isotopes",
-        "B": "element",
+        "B": "one element",
         "C": "different",
         "D": "weighs"
       },
@@ -930,9 +930,9 @@
       "no": 35,
       "question": "It is in the troposphere, the lowest part of the atmosphere, that wind, storms, and another kinds of weather take place.",
       "options": {
-        "A": "It is",
-        "B": "lowest part",
-        "C": "another",
+        "A": "the lowest part",
+        "B": "storms",
+        "C": "another kinds",
         "D": "take place"
       },
       "answer": "C"
@@ -952,10 +952,10 @@
       "no": 37,
       "question": "Of the two Diomede Islands, only one belongs the United States.",
       "options": {
-        "A": "Of the",
-        "B": "only",
-        "C": "belongs the",
-        "D": "United States"
+        "A": "Of",
+        "B": "the two",
+        "C": "only",
+        "D": "belongs"
       },
       "answer": "C"
     },
@@ -966,7 +966,7 @@
         "A": "present",
         "B": "desperately",
         "C": "aware",
-        "D": "human"
+        "D": "human nature"
       },
       "answer": "C"
     },
@@ -977,7 +977,7 @@
         "A": "In spite of",
         "B": "physician",
         "C": "graduated",
-        "D": "honors"
+        "D": "from"
       },
       "answer": "B"
     },
@@ -985,10 +985,10 @@
       "no": 40,
       "question": "Some toxins are produced by alive bacteria, but others are released only after a bacterium dies.",
       "options": {
-        "A": "are produced",
+        "A": "Some",
         "B": "alive",
-        "C": "released",
-        "D": "dies"
+        "C": "others",
+        "D": "only after"
       },
       "answer": "B"
     }
