@@ -719,279 +719,280 @@
     },
     {
       "no": 16,
-      "question": "Latex rubber is made from a milky (A) substantial in plants and trees (B) of the sapodilla family (C) (D).",
+      "question": "Latex rubber is made from a milky substantial in plants and trees of the sapodilla family.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "made from",
+        "B": "milky",
+        "C": "substantial",
+        "D": "trees"
       },
-      "answer": "B"
+      "answer": "C"
     },
     {
       "no": 17,
-      "question": "The state (A) with the most large (B) production of tobacco products is (C) North Carolina (D).",
+      "question": "The state with the most large production of tobacco products is North Carolina.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "The state",
+        "B": "most large",
+        "C": "production",
+        "D": "is"
       },
       "answer": "B"
     },
     {
       "no": 18,
-      "question": "Ballads, like folk tales (A), began thousands (B) of years ago among people who could not read (C) or writing (D).",
+      "question": "Ballads, like folk tales, began thousands of years ago among people who could not read or writing.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "like",
+        "B": "thousands",
+        "C": "read",
+        "D": "writing"
       },
-      "answer": "C"
+      "answer": "D"
     },
     {
       "no": 19,
-      "question": "The first professional baseball game it took place (A) in 1846 when (B) the New York Nine defeated (C) the New York Knickerbockers 23 to 1 (D).",
+      "question": "The first professional baseball game it took place in 1846 when the New York Nine defeated the New York Knickerbockers 23 to 1.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "it took place",
+        "B": "when",
+        "C": "defeated",
+        "D": "23 to 1"
       },
       "answer": "A"
     },
     {
       "no": 20,
-      "question": "More than (A) 300 different kinds (B) of nails is manufactured (C) in the United States (D).",
+      "question": "More than 300 different kinds of nails is manufactured in the United States.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "More than",
+        "B": "kinds",
+        "C": "is manufactured",
+        "D": "United States"
       },
       "answer": "C"
     },
     {
       "no": 21,
-      "question": "Among (A) Thomas Jefferson's many accomplishment (B) was his work to establish (C) the University of Virginia (D).",
+      "question": "Among Thomas Jefferson's many accomplishment was his work to establish the University of Virginia.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "Among",
+        "B": "accomplishment",
+        "C": "was",
+        "D": "to establish"
       },
       "answer": "B"
     },
     {
       "no": 22,
-      "question": "The state of New Mexico is not densely population (A), with an average (B) of only (C) four people per square kilometer (D).",
+      "question": "The state of New Mexico is not densely population, with an average of only four people per square kilometer.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "population",
+        "B": "an average",
+        "C": "only",
+        "D": "square"
       },
       "answer": "A"
     },
     {
       "no": 23,
-      "question": "Alike (A) bases which cause (B) litmus to turn blue, acids cause (C) litmus to turn red (D).",
+      "question": "Alike bases which cause litmus to turn blue, acids cause litmus to turn red.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "Alike",
+        "B": "cause",
+        "C": "to turn",
+        "D": "red"
       },
       "answer": "A"
     },
     {
       "no": 24,
-      "question": "Plant cuttings who (A) are placed in water (B) will develop roots and can then be planted (C) in soil (D).",
+      "question": "Plant cuttings who are placed in water will develop roots and can then be planted in soil.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "who",
+        "B": "are placed",
+        "C": "can then",
+        "D": "in soil"
       },
       "answer": "A"
     },
     {
       "no": 25,
-      "question": "Lead poisoning can result (A) if to much (B) lead builds up (C) in the body (D).",
+      "question": "Lead poisoning can result if to much lead builds up in the body.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "result",
+        "B": "to much",
+        "C": "builds up",
+        "D": "in the body"
       },
       "answer": "B"
     },
     {
       "no": 26,
-      "question": "Many American childrens (A) learned to read (B) from the more than 120 million copies (C) of McGuffy's Reader (D).",
+      "question": "Many American childrens learned to read from the more than 120 million copies of McGuffy's Reader.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "childrens",
+        "B": "learned",
+        "C": "more than",
+        "D": "copies"
       },
       "answer": "A"
     },
     {
       "no": 27,
-      "question": "In (A) A Farewell to Arms (1926) Hemingway tried to capture (B) the feelings the (C) American people at the end of (D) World War I.",
+      "question": "In A Farewell to Arms (1926) Hemingway tried to capture the feelings the American people at the end of World War I.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "In",
+        "B": "to capture",
+        "C": "feelings the",
+        "D": "the end of"
       },
       "answer": "C"
     },
     {
       "no": 28,
-      "question": "From 1785 to 1790 (A), the capital of the U.S. is located (B) in (C) New York City (D).",
+      "question": "From 1785 to 1790, the capital of the U.S. is located in New York City.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "From",
+        "B": "is located",
+        "C": "in",
+        "D": "New York City"
       },
       "answer": "B"
     },
     {
       "no": 29,
-      "question": "Many (A) Civil War battles were fought (B) in Virginia than in any other (C) state (D).",
+      "question": "Many Civil War battles were fought in Virginia than in any other state.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "Many",
+        "B": "were fought",
+        "C": "than",
+        "D": "other"
       },
       "answer": "A"
     },
     {
       "no": 30,
-      "question": "When (A) T. S. Eliot's The Wasteland appeared in 1922 (B), critics were divided (C) as to how well it was wrote (D).",
+      "question": "When T. S. Eliot's The Wasteland appeared in 1922, critics were divided as to how well it was wrote.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "When",
+        "B": "appeared",
+        "C": "were divided",
+        "D": "wrote"
       },
       "answer": "D"
     },
     {
       "no": 31,
-      "question": "The Wagner Act guarantees (A) workers in the U.S. the right to organizing (B) labor unions (C) (D).",
+      "question": "The Wagner Act guarantees workers in the U.S. the right to organizing labor unions.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "guarantees",
+        "B": "in the",
+        "C": "to organizing",
+        "D": "labor unions"
       },
-      "answer": "B"
+      "answer": "C"
     },
     {
       "no": 32,
-      "question": "According (A) the kinetic theory, all matter (B) consists of constantly moving (C) particles (D).",
+      "question": "According the kinetic theory, all matter consists of constantly moving particles.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "According",
+        "B": "consists of",
+        "C": "moving",
+        "D": "particles"
       },
       "answer": "A"
     },
     {
       "no": 33,
-      "question": "The average (A) salt content (B) of seawater is more than (C) 3 percents (D).",
+      "question": "The average salt content of seawater is more than 3 percents.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "average",
+        "B": "content",
+        "C": "more than",
+        "D": "percents"
       },
       "answer": "D"
     },
     {
       "no": 34,
-      "question": "The isotopes (A) of one element (B) can have different (C) weighs (D).",
+      "question": "The isotopes of one element can have different weighs.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "isotopes",
+        "B": "element",
+        "C": "different",
+        "D": "weighs"
       },
       "answer": "D"
     },
     {
       "no": 35,
-      "question": "It is (A) in the troposphere, the lowest part (B) of the atmosphere, that wind, storms, and another (C) kinds of weather take place (D).",
+      "question": "It is in the troposphere, the lowest part of the atmosphere, that wind, storms, and another kinds of weather take place.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "It is",
+        "B": "lowest part",
+        "C": "another",
+        "D": "take place"
       },
       "answer": "C"
     },
     {
       "no": 36,
-      "question": "The differing (A) curricula at the community colleges in Kent County reflect (B) the fact that the student population at each sites (C) is not consistent (D).",
+      "question": "The differing curricula at the community colleges in Kent County reflect the fact that the student population at each sites is not consistent.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "differing",
+        "B": "reflect",
+        "C": "sites",
+        "D": "consistent"
       },
       "answer": "C"
     },
     {
       "no": 37,
-      "question": "Of the two (A) Diomede Islands, only (B) one belongs the (C) United States (D).",
+      "question": "Of the two Diomede Islands, only one belongs the United States.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "Of the",
+        "B": "only",
+        "C": "belongs the",
+        "D": "United States"
       },
       "answer": "C"
     },
     {
       "no": 38,
-      "question": "The novels of Kurt Vonnegut present (A) a desperately (B) comic aware (C) of human nature (D).",
+      "question": "The novels of Kurt Vonnegut present a desperately comic aware of human nature.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "present",
+        "B": "desperately",
+        "C": "aware",
+        "D": "human"
       },
       "answer": "C"
     },
     {
       "no": 39,
-      "question": "In spite of (A) her physician (B) handicaps, Helen Keller graduated (C) from Radcliffe with honors (D).",
+      "question": "In spite of her physician handicaps, Helen Keller graduated from Radcliffe with honors.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "In spite of",
+        "B": "physician",
+        "C": "graduated",
+        "D": "honors"
       },
       "answer": "B"
     },
     {
       "no": 40,
-      "question": "Some toxins are produced (A) by alive (B) bacteria, but others are released (C) only after a bacterium dies (D).",
+      "question": "Some toxins are produced by alive bacteria, but others are released only after a bacterium dies.",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "are produced",
+        "B": "alive",
+        "C": "released",
+        "D": "dies"
       },
       "answer": "B"
     }
+
   ],
   "Section_3_Reading_Comprehension": [
     {
