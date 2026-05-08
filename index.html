@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOEFL CBT Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="exam-container">
+        <header>
+            <div class="exam-info">TEST OF ENGLISH AS A FOREIGN LANGUAGE</div>
+            <div id="section-info">Loading...</div>
+            <div id="timer">Time Left: <span id="time">00:00</span></div>
+        </header>
+
+        <main>
+            <div id="main-content">
+                <div id="passage-container" class="hidden">
+                    <h2>Reading Passage</h2>
+                    <div id="passage-text"></div>
+                </div>
+                <div id="question-area">
+                    <div id="question-text"></div>
+                    <div id="options-container"></div>
+                </div>
+            </div>
+            
+            <aside id="question-nav">
+                <h3>Question Navigator</h3>
+                <div id="nav-grid"></div>
+            </aside>
+        </main>
+
+        <footer>
+            <button id="prev-btn" disabled>Previous</button>
+            <button id="next-btn">Next</button>
+            <button id="finish-btn" class="hidden">Finish Exam</button>
+        </footer>
+    </div>
+
+    <div id="result-container" class="hidden">
+        <h1>Exam Results</h1>
+        <div id="score-details"></div>
+        <button id="restart-btn" onclick="location.reload()">Restart Exam</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

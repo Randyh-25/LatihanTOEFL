@@ -1,0 +1,1573 @@
+{
+  "Section_1_Listening": [
+    {
+      "no": 1,
+      "question": "(Women): Are the exams corrected yet? -> Apakah ujiannya sudah diperiksa?\n(Man): No, but they'll be corrected by noon. -> Belum, tapi akan dikoreksi siang hari\n(Narator): What does the man mean? -> Apa maksud pria itu?",
+      "options": {
+        "A": "Hell correct the exams this afternoon (Dia akan memeriksa ujian sore ini)",
+        "B": "The exam will be at noon. (Ujian akan dilaksanakan siang ini)",
+        "C": "He will collect the exams at 12:00. (Dia akan mengumpulkan ujian pada pukul 12:00)",
+        "D": "The tests will be graded by noon. (Ujian akan dinilai pada siang hari)"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 2,
+      "question": "(Women): This visa arrived yet?\n(Man): I think it arrived last month.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "Martha applied for a visa last month.",
+        "B": "Marthas visa will last for only a month.",
+        "C": "Martha arrived last month without her visa.",
+        "D": "One month ago Martha got her visa."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 3,
+      "question": "(Man): What did the professor do in the first class? I missed it because I was late.\n(Women): She outlined the course requirements.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "The professor described what the students should do.",
+        "B": "There was a long line to register for the reguired class.",
+        "C": "It is a reguirement for each professor to teach at least one course.",
+        "D": "The professor reguired the class to prepare an outline."
+      },
+      "answer": "A"
+    },
+    {
+      "no": 4,
+      "question": "(Women): How did Chuck look when you visited him in the hospital?\n(Man): He's looked better.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "Chuck had improved.",
+        "B": "This visit was better than the last.",
+        "C": "Chuck looked at him in the hospital.",
+        "D": "Chuck didn't seem to be doing very well."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 5,
+      "question": "(Man): How much was tuition increased for next month?\n(Women): More than I can afford.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "She thinks the tuition should be raised.",
+        "B": "The semesters tuition is guite affordable.",
+        "C": "She doesn't have enough money for her school fees.",
+        "D": "She has more than enough for tuition."
+      },
+      "answer": "C"
+    },
+    {
+      "no": 6,
+      "question": "(Women): How were the grades on the history exam?\n(Man): No one got above a C.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "He thinks he got a good grade.",
+        "B": "The history grades were all C or above.",
+        "C": "No one got history grades.",
+        "D": "There were no high scores."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 7,
+      "question": "(Women): You know, this is the second time this week that you've been late to class.\n(Man): It was impossible to find a place to park before the 10:00 class.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "The parking lots were full before 10:00.",
+        "B": "It was impossible to start class by 10:00.",
+        "C": "He parked the car before class at 10:00.",
+        "D": "The possibility of finding a place to park increased."
+      },
+      "answer": "A"
+    },
+    {
+      "no": 8,
+      "question": "(Man): Can I help you find something?\n(Women): Yes, thank you. I need to get a new rug.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "She's found a new ring.",
+        "B": "She needs to help him find something.",
+        "C": "She's shopping for a carpet.",
+        "D": "She's thankful she has a rag."
+      },
+      "answer": "C"
+    },
+    {
+      "no": 9,
+      "question": "(Women): I'd like to open an account.\n(Man): Would you like a savings account or an interest bearing checking account?\n(Narator): Where does this conversation probably take place?",
+      "options": {
+        "A": "In a department store",
+        "B": "In a bank",
+        "C": "In an accounting firm",
+        "D": "In a checkout line"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 10,
+      "question": "(Women): Why does Jane spend so much time in San Francisco?\n(Man): She has a cousin there, so she likes to visit, especially during the holidays.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "Jane usually visits San Francisco for her vacations.",
+        "B": "Jane's cousin often visits San Francisco.",
+        "C": "Whenever there's a holiday, Jane's cousin goes to San Francisco.",
+        "D": "Whenever there's a holiday, Jane leaves San Francisco."
+      },
+      "answer": "A"
+    },
+    {
+      "no": 11,
+      "question": "(Women): Are you really hungry?\n(Men): I feel like I haven't eaten in weeks.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "He'd really like to have something to eat.",
+        "B": "Because he's weak, hecan't eat.",
+        "C": "Its been weeks since he's had anything to eat.",
+        "D": "He hasnt felt like eating for weeks"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 12,
+      "question": "(Man): The traffic outside is really loud.\n(Women): I'll say.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "Traffic should not be allowed.",
+        "B": "She thinks that the traffic should stay outside.",
+        "C": "She agrees that the traffic is noisy.",
+        "D": "She'll stay outside with the man."
+      },
+      "answer": "C"
+    },
+    {
+      "no": 13,
+      "question": "(Man): Have you seen the headlines yet today?\n(Women): I haven't had a chance to read a word.\n(Narator): What are they probably discussing?",
+      "options": {
+        "A": "The headings for todays reading assignment.",
+        "B": "The chance to make the headlines.",
+        "C": "Her reading ability.",
+        "D": "The daily newspaper."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 14,
+      "question": "(Man): I'm not ready yet and it's going to take me a while longer.\n(Women): You'd better hurry. Take five minutes too long and you'll miss the bus.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "The bus trip is only five minutes long.",
+        "B": "The man missed the bus by five minutes.",
+        "C": "The man should hurry to catch the bus.",
+        "D": "The bus was five minutes late."
+      },
+      "answer": "C"
+    },
+    {
+      "no": 15,
+      "question": "(Women): I think it's impossible for me to pass this class.\n(Man): You should never say impossible.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "Its not possible to pass the class.",
+        "B": "She'll definitely fail.",
+        "C": "It's always possible.",
+        "D": "She shouldn't say anything about the class."
+      },
+      "answer": "C"
+    },
+    {
+      "no": 16,
+      "question": "(Man): Why were you thanking Tom?\n(Women): He lent me enough money to pay the rent.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "She gave Tom money to pay the rent.",
+        "B": "She was given money for the rent.",
+        "C": "Tom borrowed money for the rent.",
+        "D": "She had some money to lend."
+      },
+      "answer": "B"
+    },
+    {
+      "no": 17,
+      "question": "(Women): Are you enjoying the dessert?\n(Man): Never have I tasted such delicious cake.\n(Narator): What does the man say about the cake?",
+      "options": {
+        "A": "The cake is extremely good.",
+        "B": "He never tasted the cake.",
+        "C": "He wished he hadn't tasted the cake.",
+        "D": "The cake has never been very good."
+      },
+      "answer": "A"
+    },
+    {
+      "no": 18,
+      "question": "(Man): Why are you so late getting here?\n(Women): Oh, I ran into my cousin Carl and we stayed and talked for a while.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "At the corner she ran into another car.",
+        "B": "She ran to Carl because she cared.",
+        "C": "She unexpectedly met one of her relatives.",
+        "D": "Carl was running from place to place."
+      },
+      "answer": "C"
+    },
+    {
+      "no": 19,
+      "question": "(Women): Do you know where Debbie is?\n(Man): Her purse is still here, so she must still be in the apartment. What?\n(Narator): What does the man say about Debbie?",
+      "options": {
+        "A": "She shouldnt leave her purse here.",
+        "B": "She's probably in the apartment.",
+        "C": "Her purse must not be in the apartment.",
+        "D": "She left without taking her purse."
+      },
+      "answer": "B"
+    },
+    {
+      "no": 20,
+      "question": "(Man): Do you know when rent is due?\n(Women): The landlord collects it on the first of the month without fail.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "The landlord failed to collect rent on the first of last month.",
+        "B": "The tenants absolutely must pay rent at the beginning of the month.",
+        "C": "The landlord will not fail to collectyour rent on the first of next month.",
+        "D": "It is important to call the landlord about rent on the first of the month."
+      },
+      "answer": "B"
+    },
+    {
+      "no": 21,
+      "question": "(Women): My car is making some funny noises.\n(Man): Why not take it to a mechanic?\n(Narator): What does the man suggest to the woman?",
+      "options": {
+        "A": "Taking the car out for a test drive",
+        "B": "Listening to the noises",
+        "C": "Fixing the car herself",
+        "D": "Getting the car repaired"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 22,
+      "question": "(Man): Martha is holding down two jobs at the same time.\n(Women): She'd better take it easy.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "Martha s jobs are easy.",
+        "B": "It's easy to hold two jobs.",
+        "C": "It's better for Martha to have two jobs.",
+        "D": "Martha should slow down."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 23,
+      "question": "(Women): Did you get to the airport in plenty of time?\n(Man): There was scarcely enough time to get there.\n(Narator): What does the man imply?",
+      "options": {
+        "A": "The plane took off just after he arrived.",
+        "B": "He arrived just after the plane took off.",
+        "C": "He wasn't in time to catch the plane.",
+        "D": "He arrived too late to catch the plane."
+      },
+      "answer": "A"
+    },
+    {
+      "no": 24,
+      "question": "(Women): You should put some money in the parking meter.\n(Man): Parking fees aren't necessary on the weekend, are they?\n(Narator): What does the man mean?",
+      "options": {
+        "A": "He agrees with the woman's suggestion.",
+        "B": "Parking is not free on the weekend.",
+        "C": "It is not necessary for them to park.",
+        "D": "He thinks they don't have to pay."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 25,
+      "question": "(Man): How is your boss feeling about his retirement?\n(Women): Oh, he isn't too unhappy to be retiring.\n(Narator): What does the woman imply about her boss?",
+      "options": {
+        "A": "He is eager to leave his job.",
+        "B": "He is unhappy at the thought of retiring.",
+        "C": "He couldn't be unhappier about retiring.",
+        "D": "He is retiring too soon."
+      },
+      "answer": "A"
+    },
+    {
+      "no": 26,
+      "question": "(Women): Oh, I see you have a new car.\n(Man): I wish I'd been able to buy the car I really wanted.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "He got the car he really wanted.",
+        "B": "He didn't get a new car.",
+        "C": "The car that he got was not his first choice.",
+        "D": "He didn't really want a new car"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 27,
+      "question": "(Women): Did you hear the president's announcement this morning?\n(Man): Yes. The president appointed Mr. Drew head of the newly formed commission.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "Mr. Drew pointedly asked the president about the committee.",
+        "B": "The president pointed to Mr. Drew's head.",
+        "C": "Mr. Drew became head of the new commission.",
+        "D": "Mr. Drew was committed to the president's appointments."
+      },
+      "answer": "C"
+    },
+    {
+      "no": 28,
+      "question": "(Man): Were you upset by what Richard said to you?\n(Women): I couldn't have been more infuriated.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "She felt inferior.",
+        "B": "She wasn't furious.",
+        "C": "She felt there should have been more fairness.",
+        "D": "She was extremely angry."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 29,
+      "question": "(Man): Let me just get these last plates put away, then I'll be ready to go.\n(Women): So you did do the dishes.\n(Narator): What had the woman assumed it?",
+      "options": {
+        "A": "The man would do the dishes.",
+        "B": "The plates did not need to be washed.",
+        "C": "The man would not be ready to go.",
+        "D": "The dishes would not be done."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 30,
+      "question": "(Women): Why did you get that kind of fruit?\n(Man): I wouldn't have bought these cherries had I known that grapes were so cheap.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "He knew that grapes were cheaper than cherries.",
+        "B": "He didn't know that grapes were cheaper than cherries.",
+        "C": "He bought grapes because they were cheaper than cherries.",
+        "D": "He didn't buy either grapes or cherries because of the price."
+      },
+      "answer": "B"
+    },
+    {
+      "no": 31,
+      "question": "(Man): Did you buy your ticket from a travel agent or from the airline? Does it matter?\n(Women): They're all the same price.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "There are many different airline fares available.",
+        "B": "Travel agents are all the same.",
+        "C": "It matters where tickets are issued.",
+        "D": "It makes no difference where the tickets are purchased"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 32,
+      "question": "(Man): When do you think your apples will be ready to pick?\n(Women): You can always tell whether an apple's ripe by its color.\n(Narator): What does the woman imply about the apples?",
+      "options": {
+        "A": "They should be picked before they're ripe.",
+        "B": "They should have been picked already.",
+        "C": "They'll get picked when they turn a certain color.",
+        "D": "They won't be picked until next year"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 33,
+      "question": "(Women): My lease is about to expire and I've decided to get a larger place. Do you know of any two bedroom apartments for rent?\n(Man): Have you checked the off campus listings at the housing office?\n(Narator): What does the man imply?",
+      "options": {
+        "A": "A two-bedroom apartment may be too expensive.",
+        "B": "The woman should not move off campus.",
+        "C": "The woman should pay the rent by check.",
+        "D": "The university has a list of rental properties."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 34,
+      "question": "(Man): Judy looks terrific these days. Better than I've ever seen.\n(Women): I think it's her new haircut. Short hair really flatters her.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "The man often flatters Judy.",
+        "B": "Judy is thinking about getting her hair cut.",
+        "C": "She hasn't seen Judy's new haircut.",
+        "D": "She agrees with the man about Judy's appearance."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 35,
+      "question": "(Man): How about if I come over to pick you up at 6.45 for the movie?\n(Women): Make it seven. I won't have finished with dinner until then.\n(Narator): What will the woman probably be doing at 6.45?",
+      "options": {
+        "A": "Watching a movie.",
+        "B": "Talking on the phone.",
+        "C": "Picking up her friends.",
+        "D": "Eating dinner."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 36,
+      "question": "(Man): I'm moving next week and I have so much to do, I'll never get it all done.\n(Women): Don't forget to tell the post office to forward your mail. You don't want to miss any important letters.\n(Narator): What does the woman suggest the man do?",
+      "options": {
+        "A": "Notify the post office of his new address.",
+        "B": "Check to see if the mail has arrived.",
+        "C": "Send the letter by special delivery.",
+        "D": "Answer the letters after he moves."
+      },
+      "answer": "A"
+    },
+    {
+      "no": 37,
+      "question": "(Women): Is that a new pair of glasses?\n(Man): I'm making do with this old pair until my good ones are fixed.\n(Narator): What does the man imply?",
+      "options": {
+        "A": "He doesn't like his new glasses.",
+        "B": "His regular glasses are being repaired.",
+        "C": "He thinks his eyesight is improving.",
+        "D": "He's decided to go without glasses."
+      },
+      "answer": "B"
+    },
+    {
+      "no": 38,
+      "question": "(Man): I've spent the whole morning at the library looking for the information we need. You know, for the assignment that's due Friday.\n(Women): I'm stuck, too. Maybe Dr. Boyd will have some suggestions.\n(Narator): What will the speakers probably do?",
+      "options": {
+        "A": "Talk to Dr. Boyd about an assignment.",
+        "B": "Return their books to the library.",
+        "C": "Meet Dr. Boyd at the library.",
+        "D": "Make an appointment with their teacher on Friday."
+      },
+      "answer": "A"
+    },
+    {
+      "no": 39,
+      "question": "(Women): I thought you wanted orange juice.\n(Man): The machine only had milk.\n(Narator): What does the man imply?",
+      "options": {
+        "A": "There is no orange juice in the machine.",
+        "B": "He doesn't like orange juice.",
+        "C": "He prefers milk to orange juice.",
+        "D": "The machine is broken."
+      },
+      "answer": "A"
+    },
+    {
+      "no": 40,
+      "question": "(Man): Not many people know that I'm going to get this promotion.\n(Women): Your secret is safe with me.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "The man shouldn't take the new job.",
+        "B": "She's sorry the man isn't being promoted.",
+        "C": "It isn't easy to keep secrets at work.",
+        "D": "She won't tell anyone about the man's promotion."
+      },
+      "answer": "D"
+    },
+    {
+      "no": 41,
+      "question": "(Women): The weather's so nice, I think I'm going to eat my lunch outside. Care to join me?\n(Men): I'm meeting Bill in the cafeteria at noon. How about tomorrow?\n(Narator): What does the man mean?",
+      "options": {
+        "A": "He has made other plans for lunch.",
+        "B": "He has already eaten his lunch.",
+        "C": "He'd like to ask Bill to join them.",
+        "D": "He's meeting Bill in the cafeteria tomorrow."
+      },
+      "answer": "A"
+    },
+    {
+      "no": 42,
+      "question": "(Man): Listen, Eleanor, I shouldn't have said what I said yesterday. It just didn't come out right.\n(Women): Well, I shouldn't have let it get to me.\n(Narator): What is the woman doing?",
+      "options": {
+        "A": "Complaining about the man's behavior.",
+        "B": "Repeating an insensitive remark.",
+        "C": "Denying her involvement in an argument.",
+        "D": "Accepting the man's apology"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 43,
+      "question": "(Man): Are you just about finished? I need to get a hold of George before we leave.\n(Women): Just one more quick call, then it's all yours.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "The man may use the telephone soon.",
+        "B": "The man should hurry.",
+        "C": "She'll call George for the man.",
+        "D": "She's waiting for a call."
+      },
+      "answer": "A"
+    },
+    {
+      "no": 44,
+      "question": "(Women): I can't decide whether to take Professor Brown's class or Professor Thompson's.\n(Man): I can tell you this about Thompson? She knows how to get your attention and. Hold it.\n(Narator): What does the man imply about Professor Thompson?",
+      "options": {
+        "A": "She's difficult to understand.",
+        "B": "She gives longer assignments than Professor Brown.",
+        "C": "Her lectures are interesting.",
+        "D": "Her class meets more often than Professor Brown's."
+      },
+      "answer": "C"
+    },
+    {
+      "no": 45,
+      "question": "(Man): I heard you were worried about your history final. How did it go?\n(Women): Well, the essay part was about what I expected. But the multiple choice section wasn't bad. I was really surprised.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "The exam had more sections than she expected.",
+        "B": "She was surprised that the exam was so difficult.",
+        "C": "Part of the exam was easier than she expected.",
+        "D": "She didn't have time to study for the exam."
+      },
+      "answer": "C"
+    },
+    {
+      "no": 46,
+      "question": "(Women): You've been sitting at that desk for 3 hours\n(Men): In half an hour I'm going to take a break for lunch.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "He's only finished half of his lunch",
+        "B": "He's going to eat soon",
+        "C": "He'll continue to work until he finishes",
+        "D": "He'll start working half an hour from now"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 47,
+      "question": "(Man): I thought you didn't have time to go to the bank.\n(Women): It was close, but I made it.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "The bank was closed when she got there",
+        "B": "The bank stayed open later than usual",
+        "C": "She was able to do her banking",
+        "D": "She didn't have enough time to go to the bank"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 48,
+      "question": "(Man): Could you please check the list again? I sent in my registration application and fees for the conference last month.\n(Women): Let me. Oh, you did? Yes. Here's your name. Okay, you can go ahead to the next table for your information Kit\n(Narator): What can be inferred from the conversation?",
+      "options": {
+        "A": "The man has to sign his name",
+        "B": "The woman will give the man an information kit",
+        "C": "The woman can't find the list",
+        "D": "The man has already paid to attend the conference"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 49,
+      "question": "(Man): How do I get to the museum cafe?\n(Women): I left my map at the information desk.\n(Narator): What does the woman mean?",
+      "options": {
+        "A": "She doesn't know the way",
+        "B": "The café is near the information desk",
+        "C": "The man should get his own map",
+        "D": "The café isn't marked on the map"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 50,
+      "question": "(Women): I'd be glad to drop you off downtown on my way home.\n(Man): Well, if you're sure it's not out of your way.\n(Narator): What does the man mean?",
+      "options": {
+        "A": "He'd like to get a ride from the woman",
+        "B": "He lives very near the woman",
+        "C": "He doesn't want to go down",
+        "D": "He thinks the woman is going the wrong way"
+      },
+      "answer": "A"
+    }
+  ],
+  "Section_2_Structure_and_Written_Expression": [
+    {
+      "no": 1,
+      "question": "___ of the Stamp Act in 1765 provoked strong opposition among the American colonists.",
+      "options": {
+        "A": "The passage was",
+        "B": "It was the passage",
+        "C": "Before the passage",
+        "D": "The passage"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 2,
+      "question": "In 1905 Juneau replaced Sitka ___ Alaska.",
+      "options": {
+        "A": "the capital was",
+        "B": "as the capital of",
+        "C": "was the capital of",
+        "D": "the capital being"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 3,
+      "question": "___ were first viewed through a telescope by Galileo.",
+      "options": {
+        "A": "Jupiter has four moons",
+        "B": "Jupiter's four moons",
+        "C": "Jupiter surrounded by four moons",
+        "D": "Surrounded by four moons, Jupiter"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 4,
+      "question": "___ the end of the Ice Age around 8000 B.C., mammoths became extinct.",
+      "options": {
+        "A": "With",
+        "B": "It was",
+        "C": "That",
+        "D": "In addition"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 5,
+      "question": "There are two basic kinds of air compressors, reciprocating and ___.",
+      "options": {
+        "A": "another kind that is rotating",
+        "B": "one that rotates",
+        "C": "a rotating kind",
+        "D": "rotating"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 6,
+      "question": "The human body has four jugular veins, ___ each side of the neck.",
+      "options": {
+        "A": "there are two on",
+        "B": "it has two on",
+        "C": "two are on",
+        "D": "two on"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 7,
+      "question": "___ its proximity to New York, New Jersey is an important link in the nation's transportation system.",
+      "options": {
+        "A": "Since",
+        "B": "As a result",
+        "C": "However",
+        "D": "Because of"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 8,
+      "question": "Agronomists work to improve the quality of crops, increase the yield of fields, and ___ of the soil.",
+      "options": {
+        "A": "the quality is maintained",
+        "B": "maintain the quality",
+        "C": "the maintenance of the quality",
+        "D": "maintaining the quality"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 9,
+      "question": "From 1898 to 1933, the U.S. Weather Bureau obtained information about the weather from ___ to box kites.",
+      "options": {
+        "A": "attached devices",
+        "B": "attached to devices",
+        "C": "devices attached",
+        "D": "devices were attached"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 10,
+      "question": "Projective tests ___ as the Rorschach Test have no right or wrong answers.",
+      "options": {
+        "A": "such",
+        "B": "similar",
+        "C": "like",
+        "D": "same"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 11,
+      "question": "One purpose ___ to decide if there is sufficient evidence to try a person for a crime.",
+      "options": {
+        "A": "of a grand jury is",
+        "B": "of a grand jury",
+        "C": "for a grand jury",
+        "D": "of a grand jury which is"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 12,
+      "question": "___ in 1937, the Golden Gate Bridge spans the channel at the entrance to San Francisco Bay.",
+      "options": {
+        "A": "Completes",
+        "B": "Completed",
+        "C": "Completing",
+        "D": "To complete"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 13,
+      "question": "A slipped disk is a condition ___ the intervertebral disk protrudes and presses on nerves.",
+      "options": {
+        "A": "what",
+        "B": "which is",
+        "C": "in which",
+        "D": "that"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 14,
+      "question": "Scientists stress that the overall warming trend of the last decade holds much more significance ___ single year's temperatures.",
+      "options": {
+        "A": "any do",
+        "B": "than do any",
+        "C": "than any do",
+        "D": "do than"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 15,
+      "question": "When impulses from many of the neurons in one part of the brain ___ , an epileptic seizure occurs.",
+      "options": {
+        "A": "the simultaneous bursts",
+        "B": "simultaneously burst",
+        "C": "there are simultaneous bursts of",
+        "D": "simultaneously bursting"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 16,
+      "question": "Latex rubber is made from a milky (A) substantial in plants and trees (B) of the sapodilla family (C) (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 17,
+      "question": "The state (A) with the most large (B) production of tobacco products is (C) North Carolina (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 18,
+      "question": "Ballads, like folk tales (A), began thousands (B) of years ago among people who could not read (C) or writing (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 19,
+      "question": "The first professional baseball game it took place (A) in 1846 when (B) the New York Nine defeated (C) the New York Knickerbockers 23 to 1 (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 20,
+      "question": "More than (A) 300 different kinds (B) of nails is manufactured (C) in the United States (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 21,
+      "question": "Among (A) Thomas Jefferson's many accomplishment (B) was his work to establish (C) the University of Virginia (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 22,
+      "question": "The state of New Mexico is not densely population (A), with an average (B) of only (C) four people per square kilometer (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 23,
+      "question": "Alike (A) bases which cause (B) litmus to turn blue, acids cause (C) litmus to turn red (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 24,
+      "question": "Plant cuttings who (A) are placed in water (B) will develop roots and can then be planted (C) in soil (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 25,
+      "question": "Lead poisoning can result (A) if to much (B) lead builds up (C) in the body (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 26,
+      "question": "Many American childrens (A) learned to read (B) from the more than 120 million copies (C) of McGuffy's Reader (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 27,
+      "question": "In (A) A Farewell to Arms (1926) Hemingway tried to capture (B) the feelings the (C) American people at the end of (D) World War I.",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 28,
+      "question": "From 1785 to 1790 (A), the capital of the U.S. is located (B) in (C) New York City (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 29,
+      "question": "Many (A) Civil War battles were fought (B) in Virginia than in any other (C) state (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 30,
+      "question": "When (A) T. S. Eliot's The Wasteland appeared in 1922 (B), critics were divided (C) as to how well it was wrote (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 31,
+      "question": "The Wagner Act guarantees (A) workers in the U.S. the right to organizing (B) labor unions (C) (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 32,
+      "question": "According (A) the kinetic theory, all matter (B) consists of constantly moving (C) particles (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "A"
+    },
+    {
+      "no": 33,
+      "question": "The average (A) salt content (B) of seawater is more than (C) 3 percents (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 34,
+      "question": "The isotopes (A) of one element (B) can have different (C) weighs (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "D"
+    },
+    {
+      "no": 35,
+      "question": "It is (A) in the troposphere, the lowest part (B) of the atmosphere, that wind, storms, and another (C) kinds of weather take place (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 36,
+      "question": "The differing (A) curricula at the community colleges in Kent County reflect (B) the fact that the student population at each sites (C) is not consistent (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 37,
+      "question": "Of the two (A) Diomede Islands, only (B) one belongs the (C) United States (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 38,
+      "question": "The novels of Kurt Vonnegut present (A) a desperately (B) comic aware (C) of human nature (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "C"
+    },
+    {
+      "no": 39,
+      "question": "In spite of (A) her physician (B) handicaps, Helen Keller graduated (C) from Radcliffe with honors (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "B"
+    },
+    {
+      "no": 40,
+      "question": "Some toxins are produced (A) by alive (B) bacteria, but others are released (C) only after a bacterium dies (D).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "B"
+    }
+  ],
+  "Section_3_Reading_Comprehension": [
+    {
+      "passage": "Galaxies are not evenly distributed throughout the universe. A few are found alone, but almost all are grouped in formations termed galactic clusters. These formations should not be confused with stellar clusters, globular clusters of stars that exist within a galaxy. The size of galactic clusters varies enormously, with some clusters containing only a dozen or so members and others containing as many as 10,000. Moreover, galactic clusters themselves are part of larger clusters of clusters, termed superclusters. It is surmised that even clusters of superclusters are possible. Our galaxy, the Milky Way, is part of a galactic cluster called the Local Group, which has twenty members and is typical in terms of the types of galaxies it contains. There are three large spiral galaxies: Andromeda, the largest galaxy in the group; the Milky Way, the second-largest galaxy; and the Triangulum Spiral, the third largest. There are also four medium-sized spiral galaxies, including the Large Cloud of Magellan and the Small Cloud of Magellan. There are four regular elliptical galaxies; the remainder are dwarf ellipticals. Other than our own galaxy, only Andromeda and the Clouds of Magellan can be seen with the naked eye, and the Clouds are visible only from the Southern Hemisphere. In the vicinity of the Local Group are several clusters, each containing around twelve members. The nearest cluster rich in members is the Virgo Cluster, which contains thousands of galaxies of all types. Like most large clusters, it emits X rays. The Local Group, the small neighboring clusters, and the Virgo Cluster form part of a much larger cluster of clusters - the Local Supercluster. The existence of galactic clusters presented a riddle to scientists for many years the \"missing mass\" problem. Clusters are presumably held together by the gravity generated by their members. However, measurements showed that the galaxies did not have enough mass to explain their apparent stability. Why didn't these clusters disintegrate? It is now thought that galaxies contain great amounts of \"dark matter,\" which cannot be directly observed but which generates gravitational pull. This matter includes gas, dust, burnt-out stars, and even black holes.",
+      "questions": [
+        {
+          "no": 1,
+          "question": "Which of the following does the passage mainly discuss?",
+          "options": {
+            "A": "Clusters and superclusters of galaxies",
+            "B": "An astronomical problem that has never been solved",
+            "C": "A recent development in astronomy",
+            "D": "The incredible distance between galaxies"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 2,
+          "question": "The word evenly in line 1 is closest in meaning to",
+          "options": {
+            "A": "uniformly",
+            "B": "predictably",
+            "C": "relatively",
+            "D": "paradoxically"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 3,
+          "question": "What conclusion can be made about galaxies that are not found in clusters?",
+          "options": {
+            "A": "They have never been observed.",
+            "B": "They are larger than other galaxies.",
+            "C": "They are not actually galaxies but parts of galaxies.",
+            "D": "They are outnumbered by galaxies that do occur in clusters."
+          },
+          "answer": "D"
+        },
+        {
+          "no": 4,
+          "question": "The word globular in line 3 is closest in meaning to",
+          "options": {
+            "A": "immense",
+            "B": "spherical",
+            "C": "dense",
+            "D": "brilliant"
+          },
+          "answer": "B"
+        },
+        {
+          "no": 5,
+          "question": "The author would probably characterize the existence of clusters of superclusters as",
+          "options": {
+            "A": "impossible",
+            "B": "surprising",
+            "C": "theoretical",
+            "D": "certain"
+          },
+          "answer": "C"
+        },
+        {
+          "no": 6,
+          "question": "According to the passage, in what way is the Local Group typical of galactic clusters?",
+          "options": {
+            "A": "In its size",
+            "B": "In the number of galaxies it contains",
+            "C": "In its shape",
+            "D": "In the types of galaxies that make it up"
+          },
+          "answer": "D"
+        },
+        {
+          "no": 7,
+          "question": "In the Local Group, which of the following types of galaxies are most numerous?",
+          "options": {
+            "A": "Large spirals",
+            "B": "Medium-sized spirals",
+            "C": "Regular ellipticals",
+            "D": "Dwarf ellipticals"
+          },
+          "answer": "D"
+        },
+        {
+          "no": 8,
+          "question": "All of the following are visible from somewhere on Earth without a telescope EXCEPT",
+          "options": {
+            "A": "the Clouds of Magellan",
+            "B": "Andromeda",
+            "C": "the Triangulum Spiral",
+            "D": "the Milky Way"
+          },
+          "answer": "C"
+        },
+        {
+          "no": 9,
+          "question": "According to the passage, the Local Group and the Virgo Cluster have which of the following in common?",
+          "options": {
+            "A": "Both are rich in galaxies.",
+            "B": "Both emit X rays.",
+            "C": "Both are part of the same supercluster.",
+            "D": "Both are small clusters."
+          },
+          "answer": "C"
+        },
+        {
+          "no": 10,
+          "question": "The word riddle in line 25 is closest in meaning to",
+          "options": {
+            "A": "tool",
+            "B": "puzzle",
+            "C": "theory",
+            "D": "clue"
+          },
+          "answer": "B"
+        },
+        {
+          "no": 11,
+          "question": "Which of the following is NOT true about the 'dark matter' mentioned in line 30?",
+          "options": {
+            "A": "It is impossible to observe directly.",
+            "B": "It may include black holes.",
+            "C": "It helps explain the 'missing mass' problem.",
+            "D": "It is found in the space between galaxies."
+          },
+          "answer": "D"
+        },
+        {
+          "no": 12,
+          "question": "As used throughout the passage, the word members refers to",
+          "options": {
+            "A": "stars",
+            "B": "galaxies",
+            "C": "scientists",
+            "D": "clusters"
+          },
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "passage": "The Roman alphabet took thousands of years to develop, from the picture writing of the ancient Egyptians through modifications by Phoenicians, Greeks, Romans, and others. Yet in just a dozen years, one man, Sequoyah, invented an alphabet for the Cherokee people. Born in eastern Tennessee, Sequoyah was a hunter and a silversmith in his youth, as well as an able interpreter who knew Spanish, French, and English. Sequoyah wanted his people to have the secret of the \"talking leaves,\" as he called the books of white people, and so he set out to design a written form of Cherokee. His chief aim was to record his people's ancient tribal customs. He began by designing pictographs for every word in the Cherokee vocabulary. Reputedly his wife, angry at him for his neglect of garden and house, burned his notes, and he had to start over. This time, having concluded that picture-writing was cumbersome, he made symbols for the sounds of the Cherokee language. Eventually he refined his system to eighty-five characters, which he borrowed from the Roman, Greek, and Hebrew alphabets. He presented this system to the Cherokee General Council in 1821, and it was wholeheartedly approved. The response was phenomenal. Cherokees who had struggled for months to learn English lettering in school picked up the new system in days. Several books were printed in Cherokee, and in 1828, a newspaper, the Cherokee Phoenix, was first published in the new alphabet. Sequoyah was acclaimed by his people. In his later life, Sequoyah dedicated himself to the general advancement of his people. He went to Washington, D.C., as a reprensetative of the Western tribes. He helped settle bitter differences among Cherokee after their forced movement by the federal government to the Oklahoma territory in the 1830s. He died in Mexico in 1843 while searching for groups of lost Cherokee. A statue of Sequoyah represents Oklahoma in the Statuary Hall in the Capitol building in Washington, D.C. However, he is probably chiefly remembered today because sequoias, the giant redwood trees of California, are named for him.",
+      "questions": [
+        {
+          "no": 13,
+          "question": "The passage is mainly concerned with",
+          "options": {
+            "A": "the development of the Roman alphabet",
+            "B": "the accomplishments of Sequoyah",
+            "C": "the pictographic system of writing",
+            "D": "Sequoyah's experiences in Mexico"
+          },
+          "answer": "B"
+        },
+        {
+          "no": 14,
+          "question": "According to the passage, how long did it take to develop the Cherokee alphabet?",
+          "options": {
+            "A": "Twelve years",
+            "B": "Twenty years",
+            "C": "Eighty-five years",
+            "D": "Thousands of years"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 15,
+          "question": "There is NO indication in the passage that, as a young man, Sequoyah",
+          "options": {
+            "A": "served as an interpreter",
+            "B": "made things from silver",
+            "C": "served as a representative in Washington",
+            "D": "hunted game"
+          },
+          "answer": "C"
+        },
+        {
+          "no": 16,
+          "question": "According to the passage, Sequoyah used the phrase talking leaves (line 7) to refer to",
+          "options": {
+            "A": "redwood trees",
+            "B": "books",
+            "C": "symbols for sounds",
+            "D": "newspapers"
+          },
+          "answer": "B"
+        },
+        {
+          "no": 17,
+          "question": "What was Sequoyah's main purpose in designing a Cherokee alphabet?",
+          "options": {
+            "A": "To record Cherokee customs",
+            "B": "To write books in Cherokee",
+            "C": "To write about his own life",
+            "D": "To publish a newspaper"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 18,
+          "question": "The word cumbersome in line 13 is closest in meaning to",
+          "options": {
+            "A": "awkward",
+            "B": "radical",
+            "C": "simplistic",
+            "D": "unfamiliar"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 19,
+          "question": "In the final version of the Cherokee alphabet system, each of the characters represents a",
+          "options": {
+            "A": "word",
+            "B": "picture",
+            "C": "sound",
+            "D": "thought"
+          },
+          "answer": "C"
+        },
+        {
+          "no": 20,
+          "question": "All of the following were mentioned in the passage as alphabet systems that Sequoyah borrowed from EXCEPT",
+          "options": {
+            "A": "Egyptian",
+            "B": "Roman",
+            "C": "Hebrew",
+            "D": "Greek"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 21,
+          "question": "The word wholeheartedly in line 17 is closest in meaning to",
+          "options": {
+            "A": "unanimously",
+            "B": "enthusiastically",
+            "C": "immediately",
+            "D": "ultimately"
+          },
+          "answer": "B"
+        },
+        {
+          "no": 22,
+          "question": "According to the passage, a memorial statue of Sequoyah is located in",
+          "options": {
+            "A": "Oklahoma",
+            "B": "Mexico",
+            "C": "Tennessee",
+            "D": "Washington, D.C."
+          },
+          "answer": "D"
+        },
+        {
+          "no": 23,
+          "question": "Why does the author mention the giant redwood trees of California in the passage?",
+          "options": {
+            "A": "Sequoyah took his name from those trees.",
+            "B": "The trees inspired Sequoyah to write a book.",
+            "C": "Sequoyah was born in the vicinity of the redwood forest.",
+            "D": "The trees were named in Sequoyah's honor."
+          },
+          "answer": "D"
+        },
+        {
+          "no": 24,
+          "question": "The author begins to describe the Cherokees' reaction to the invention of a written language in",
+          "options": {
+            "A": "lines 3-4",
+            "B": "lines 9-10",
+            "C": "lines 17-21",
+            "D": "lines 23-24"
+          },
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "passage": "For a long time, amphibians were confused with reptiles. Like reptiles, they have three-chambered hearts and are cold-blooded. Some amphibians, such as salamanders, are even shaped like lizards. However, unlike reptiles, amphibians never have claws on their toes or scales on their bodies. Furthermore, the eggs of amphibians lack shells, so they must be laid in water or moist places. Amphibians were the first creatures to spend sizable amounts of their lives on land. The larvae of most amphibians, such as frog tadpoles, are born with gills and live in water. However, their gills disappear as they develop lungs. Most retain the ability to breathe through the moist surface of their skin. This comes in handy when they hibernate in the bottom mud of lakes and ponds during the coldest months. They take in the small amount of oxygen they need through their skin. Some amphibians undergo what is known as a \"double metamorphosis,\" changing not only from gill breathers to lung breathers but also from vegetarians to insectivores. Although the amphibian class is rather small in number of species, it shows great diversity. There are three major types. The caecilians of the tropics are long, legless, burrowing creatures. Caudate amphibians, such as newts and salamanders, mostly have long tails and stubby legs. Salientians, which include both frogs and toads, are tailless as adults and have powerful hind legs. Toads differ from frogs primarily in that they have dry, warty skin.",
+      "questions": [
+        {
+          "no": 25,
+          "question": "The author's main purpose in writing the passage is to",
+          "options": {
+            "A": "define and describe amphibians",
+            "B": "contrast different types of amphibians",
+            "C": "trace the development of amphibians from larvae to adults",
+            "D": "explain how amphibians differ from other creatures"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 26,
+          "question": "According to the passage, which of the following is NOT a characteristic of amphibians?",
+          "options": {
+            "A": "They have three-chambered hearts.",
+            "B": "They lay eggs without shells.",
+            "C": "They have claws on their toes.",
+            "D": "They are cold-blooded."
+          },
+          "answer": "C"
+        },
+        {
+          "no": 27,
+          "question": "As used in line 4, the term scales is closest to which of the following in meaning?",
+          "options": {
+            "A": "Devices used to measure weight",
+            "B": "Plates covering the bodies of certain animals",
+            "C": "Sounds made by various animals",
+            "D": "Proportions between different sets of dimensions"
+          },
+          "answer": "B"
+        },
+        {
+          "no": 28,
+          "question": "According to the passage, the term double metamorphosis (line 14) refers to the fact that amphibians",
+          "options": {
+            "A": "first breathe through their gills, then through their lungs, then through their skin",
+            "B": "change both the shape of their bodies and the way in which they lay eggs",
+            "C": "first live in the water, then on land, then in mud in the bottom of ponds and lakes",
+            "D": "change both their methods of breathing and their feeding habits"
+          },
+          "answer": "D"
+        },
+        {
+          "no": 29,
+          "question": "It can be inferred from the passage that amphibians' ability to breathe through their skin is especially useful during the",
+          "options": {
+            "A": "summer",
+            "B": "fall",
+            "C": "winter",
+            "D": "spring"
+          },
+          "answer": "C"
+        },
+        {
+          "no": 30,
+          "question": "All of the following are identified in the passage as amphibians EXCEPT",
+          "options": {
+            "A": "newts",
+            "B": "salamanders",
+            "C": "caecilians",
+            "D": "lizards"
+          },
+          "answer": "D"
+        },
+        {
+          "no": 31,
+          "question": "The word stubby in line 19 is closest in meaning to",
+          "options": {
+            "A": "long and thin",
+            "B": "undeveloped",
+            "C": "thick and short",
+            "D": "powerful"
+          },
+          "answer": "C"
+        },
+        {
+          "no": 32,
+          "question": "In line 21, the word they refers to",
+          "options": {
+            "A": "toads",
+            "B": "tails",
+            "C": "adults",
+            "D": "frogs"
+          },
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "passage": "The first animated film, Honorous Phases of Funny Faces, was made in 1906 by newspaper illustrator James Blackton. He filmed faces that were drawn on a blackboard in progressive stages. In New York City, Winsor McCay exhibited his most famous films, Little Nemo (1910) and Gertie the Dinosaur (1914). His films featured fluid motion and characters with individual personalities. For the first time, characters drawn of lines seemed to live on the screen. In 1914, John R. Bray streamlined the animation process, using assembly-line techniques to turn out cartoons. By 1915, film studios began producing cartoon series. The Pat Sullivan studio produced the series featuring Felix the Cat. He became one of the most beloved characters of the silent-film era. The Max Fleischer studio produced series starring Ko-Ko the Clown and, later, Betty Boop and Popeye. The first cartoon with sound was Steamboat Willie (1928), which introduced Mickey Mouse. This film was produced by Walt Disney, the most famous of American animators. His early success enabled Disney to train his animators in anatomy, acting, drawing, and motion studies. The results of this are apparent in Snow White and the Sevent Dwarfs (1937), the first full-length animated feature. It became an instant success, and still remains popular. Other important Disney films followed. Warner Brothers' studio challenged Disney for leadership in the field with cartoons starring Bugs Bunny, Daffy Duck, and other characters. These films were faster-paced and featured slapstick humor. In the 1950s, a group of animators splintered off from Disney and formed United Production of America, which rejected Disney's realism and employed a bold, modernistic approach. In the 1950s, children's cartoons began to be broadcast on Saturday morning television and, later, in prime time. Among the most successful were those made by William Hanna and Joseph Barbera, such as those featuring Yogi Bear and the Flintstones. The full-length animated film became popular again in the 1980s and '90s. Producer Steven Spielberg released his first animated film, An American Tail (1986), and Disney began a series of remarkable annual hits with The Little Mermaid (1989). Who Framed Roger Rabbit? (1988), a joint production of Spielberg and Disney, blurred the lines between live action and animation. Animation returned to prime-time television with the Fox Network's The Simpsons. Animators had experimented with computer animation as early as the 1950s, but Toy Story (1995) was the first full-length film to be entirely computer animated. These developments promise to bring about the most exciting era in animation since its heyday.",
+      "questions": [
+        {
+          "no": 33,
+          "question": "What does the passage mainly discuss?",
+          "options": {
+            "A": "the history of animated film",
+            "B": "the life of Walt Disney",
+            "C": "the development of one animated cartoon",
+            "D": "the use of computers in animation"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 34,
+          "question": "It can be inferred from the passage that the characters in Little Nemo and Gertie the Dinosaur",
+          "options": {
+            "A": "were first drawn on a blackboard",
+            "B": "were part of a cartoon series",
+            "C": "seemed to have their own personalities",
+            "D": "did not look as lifelike as Blackton's characters"
+          },
+          "answer": "C"
+        },
+        {
+          "no": 35,
+          "question": "The word streamlined in line 8 is closest in meaning to",
+          "options": {
+            "A": "simplified",
+            "B": "revolutionized",
+            "C": "bypassed",
+            "D": "invented"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 36,
+          "question": "The word he in line 10 refers to",
+          "options": {
+            "A": "Pat Sullivan",
+            "B": "Felix the Cat",
+            "C": "Max Fleischer",
+            "D": "Ko Ko the Clown"
+          },
+          "answer": "B"
+        },
+        {
+          "no": 37,
+          "question": "What can be inferred from the passage about animated films produced before 1928?",
+          "options": {
+            "A": "They were not very popular.",
+            "B": "They were longer than later movies.",
+            "C": "They were not drawn by hand.",
+            "D": "They were silent films."
+          },
+          "answer": "D"
+        },
+        {
+          "no": 38,
+          "question": "According to the passage, the film Snow White and the Seven Dwarfs",
+          "options": {
+            "A": "showed the benefits of training the Disney animators",
+            "B": "was the first movie produced by Walt Disney",
+            "C": "was the last movie Disney made before his death",
+            "D": "did not become successful until many years later"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 39,
+          "question": "The phrase splintered off from in line 24 is closest in meaning to",
+          "options": {
+            "A": "competed with",
+            "B": "broke away from",
+            "C": "merged with",
+            "D": "released from"
+          },
+          "answer": "B"
+        },
+        {
+          "no": 40,
+          "question": "The author does NOT specifically mention characters produced by",
+          "options": {
+            "A": "Walt Disney",
+            "B": "Hanna and Barbera",
+            "C": "United Productions of America",
+            "D": "Warner Brothers"
+          },
+          "answer": "C"
+        },
+        {
+          "no": 41,
+          "question": "The phrase blurred the lines in line 33 is closest in meaning to",
+          "options": {
+            "A": "eliminated the distinctions",
+            "B": "obscured the issues",
+            "C": "answered the questions",
+            "D": "emphasized the problems"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 42,
+          "question": "The first experiments with computer animation took place during the",
+          "options": {
+            "A": "1950s",
+            "B": "1960s",
+            "C": "1980s",
+            "D": "1990s"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 43,
+          "question": "Which of the following is closest in meaning to the word heyday in line 38?",
+          "options": {
+            "A": "Beginning",
+            "B": "Decline",
+            "C": "Prime",
+            "D": "Rebirth"
+          },
+          "answer": "C"
+        },
+        {
+          "no": 44,
+          "question": "Where in the passage does the author first mention animation on television?",
+          "options": {
+            "A": "Line 9",
+            "B": "Lines 13-14",
+            "C": "Lines 25-26",
+            "D": "Lines 34-35"
+          },
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "passage": "Fog is a cloud in contact with or just above the surface of land or sea. It can be a major environmental hazard. Fog on highways can cause chain-reaction accidents involving dozens of cars. Delays and shutdowns at airports can cause economic losses to airlines and inconvenience to thousands of travelers. Fog at sea has always been a danger to navigation. Today, with supertankers carrying vast quantities of oil, fog increases the possibility of catastrophic oil spills. The most common type of fog, radiation fog, forms at night, when moist air near the ground loses warmth through radiation on a clear night. This type of fog often occurs in valleys, such as California's San Joaquin Valley. Another common type, advection fog, results from the movement of warm, wet air over cold ground. The air loses temperature to the ground and condensation sets in. This type of fog often occurs along the California coast and the shores of the Great Lakes. Advection fog also forms when air associated with a warm ocean current blows across the surface of a cold current. The thick fogs of the Grand Banks off Newfoundland, Canada, are largely of this origin, because here the Labrador Current comes in contact with the warm Gulf Stream. Two other types of fog are somewhat more unusual. Frontal fog occurs when two fronts of different temperatures meet, and rain from the warm front falls into the colder one, saturating the air. Steam fog appears when cold air picks up moisture by moving over warmer water.",
+      "questions": [
+        {
+          "no": 45,
+          "question": "The first paragraph focuses on which aspect of fog?",
+          "options": {
+            "A": "its dangers",
+            "B": "its composition",
+            "C": "its beauty",
+            "D": "its causes"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 46,
+          "question": "The word catastrophic in line 7 is closest in meaning to",
+          "options": {
+            "A": "accidental",
+            "B": "inevitable",
+            "C": "unexpected",
+            "D": "disastrous"
+          },
+          "answer": "D"
+        },
+        {
+          "no": 47,
+          "question": "According to the article, fog that occurs along the California coast is generally",
+          "options": {
+            "A": "radiation fog",
+            "B": "advection fog",
+            "C": "frontal fog",
+            "D": "steam fog"
+          },
+          "answer": "B"
+        },
+        {
+          "no": 48,
+          "question": "It can be inferred from the passage that the Labrador Current is",
+          "options": {
+            "A": "cold",
+            "B": "weak",
+            "C": "polluted",
+            "D": "warm"
+          },
+          "answer": "A"
+        },
+        {
+          "no": 49,
+          "question": "The author organizes the discussion of the different types of fog according to",
+          "options": {
+            "A": "their geographic locations",
+            "B": "their relative density",
+            "C": "the types of problems they cause",
+            "D": "their relative frequency"
+          },
+          "answer": "D"
+        },
+        {
+          "no": 50,
+          "question": "The author of the passage is probably an expert in the field of",
+          "options": {
+            "A": "physics",
+            "B": "economics",
+            "C": "transportation",
+            "D": "meteorology"
+          },
+          "answer": "D"
+        }
+      ]
+    }
+  ]
+}

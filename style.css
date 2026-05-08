@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Exam Container */
+#exam-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+#main-content {
+    flex: 3;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#passage-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    line-height: 1.6;
+}
+
+#question-area {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#question-text {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.option {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #f9f9f9;
+}
+
+.option:hover {
+    background: #eef2ff;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+#question-nav {
+    flex: 1;
+    background: #fff;
+    border-left: 2px solid #ccc;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    gap: 5px;
+}
+
+.nav-btn {
+    padding: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.nav-btn.answered {
+    background: #4ade80;
+    color: white;
+    border-color: #2563eb;
+}
+
+.nav-btn.active {
+    border: 2px solid #1e3a8a;
+    font-weight: bold;
+}
+
+footer {
+    background: #ddd;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #1e3a8a;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background: #1e40af;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Result Screen */
+#result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: white;
+}
+
+#score-details {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.8;
+}
