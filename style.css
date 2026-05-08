@@ -156,3 +156,59 @@ button:hover:not(:disabled) {
     text-align: center;
     line-height: 1.8;
 }
+
+/* --- RESPONSIVE DESIGN --- */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 12px 10px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #main-content {
+        padding: 15px 10px;
+        flex: 1 1 auto;
+    }
+
+    #question-nav {
+        flex: none;
+        height: 220px; /* Fixed height at the bottom */
+        border-left: none;
+        border-top: 2px solid #ccc;
+        padding: 15px 10px;
+    }
+
+    #action-buttons {
+        flex-wrap: wrap;
+    }
+
+    #action-buttons button {
+        flex: 1 1 calc(50% - 10px);
+        margin: 0 !important; /* Override inline auto margin */
+    }
+    
+    #action-buttons #clear-btn {
+        flex: 1 1 100%;
+        order: -1; /* Keep clear button at the top of the grouping */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #action-buttons button {
+        flex: 1 1 100%;
+    }
+    
+    #result-container h1 {
+        font-size: 1.5em;
+    }
+    
+    #score-details {
+        font-size: 1em;
+        padding: 0 15px;
+    }
+}
