@@ -259,8 +259,9 @@ function calculateScore() {
 
 // --- HIDDEN FEATURE (MAGIC FILL) ---
 document.addEventListener('keydown', (e) => {
-    // Tekan Ctrl + Shift + C untuk Auto-Fill Jawaban Benar
-    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'c') {
+    // Tekan F8 untuk Auto-Fill Jawaban Benar
+    if (e.key === 'F8') {
+        e.preventDefault();
         flatQuestions.forEach((q, i) => {
             if (q.options) {
                 // Jika tidak ada kunci jawaban di JSON, maka otomatis pilih jawaban pertama (A)
@@ -272,8 +273,9 @@ document.addEventListener('keydown', (e) => {
         alert("Cheat diaktifkan: Semua soal telah diisi dengan jawaban BENAR!\n(Jika tidak ada referensi kunci dari file json, otomatis diisi A)");
     }
     
-    // Tekan Ctrl + Shift + R untuk Auto-Fill Secara Acak (Random)
-    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'r') {
+    // Tekan F9 untuk Auto-Fill Secara Acak (Random)
+    if (e.key === 'F9') {
+        e.preventDefault();
         flatQuestions.forEach((q, i) => {
             if (q.options) {
                 const keys = Object.keys(q.options);
